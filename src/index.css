@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --color-brand-pale: #f0f9fb;
+  --color-brand-ice: #e8f6f8;
+  --color-brand-soft: #ddf2f6;
+  --color-brand-primary: #4DAEB5;
+  --color-brand-hover: #3d969c;
+  --color-brand-border: #dbeff2;
+  --color-brand-heading: #17252B;
+  --color-brand-body: #52656b;
+  --color-brand-dark: #111c21;
+
+  --radius-2xl: 1.25rem;
+  --radius-3xl: 1.75rem;
+  --radius-32: 2rem;
+  --radius-36: 2.25rem;
+
+  --shadow-card: 0 10px 30px -5px rgba(77, 174, 181, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.03);
+  --shadow-floating: 0 20px 40px -10px rgba(23, 37, 43, 0.08), 0 1px 3px rgba(0, 0, 0, 0.04);
+  --shadow-glass: 0 12px 36px 0 rgba(77, 174, 181, 0.14);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    background-color: #f0f9fb;
+    color: #52656b;
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  ::selection {
+    background-color: #4DAEB5;
+    color: #ffffff;
+  }
+
+  /* Accessibility focus styling */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: 2px solid #4DAEB5;
+    outline-offset: 2px;
+  }
+}
+
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #dbeff2;
+  border-radius: 9999px;
+}
