@@ -58,10 +58,10 @@ export class ErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundarySt
                 Reload Page
               </Button>
               <a
-                href="tel:01162718800"
+                href="tel:+447459131084"
                 className="inline-flex items-center justify-center px-4 py-2.5 text-sm font-medium text-slate-700 bg-slate-100 hover:bg-slate-200 rounded-lg transition-colors"
               >
-                Call Office
+                Call Office (+44 7459 131084)
               </a>
             </div>
           </div>

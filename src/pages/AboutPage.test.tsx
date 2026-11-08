@@ -136,7 +136,7 @@ describe('AboutPage Component', () => {
       }),
     ).toBeInTheDocument()
 
-    expect(screen.getByText(/Call Us – 0116 271 8800/i)).toBeInTheDocument()
+    expect(screen.getByText(/Call Us – \+44 7459 131084/i)).toBeInTheDocument()
 
     const assessmentBtn = screen.getByRole('button', {
       name: /Book a Free Home Assessment/i,

@@ -66,7 +66,7 @@ export const ServiceAdviceForm: React.FC<ServiceAdviceFormProps> = ({
     if (!trimmedPhone) {
       newErrors.phone = 'Please enter your telephone number.'
     } else if (!PHONE_REGEX.test(trimmedPhone)) {
-      newErrors.phone = 'Please enter a valid UK telephone number (e.g. 0116 271 8800 or 07123 456789).'
+      newErrors.phone = 'Please enter a valid UK telephone number (e.g. 07123 456789).'
     }
 
     if (!careType) {
@@ -167,9 +167,8 @@ export const ServiceAdviceForm: React.FC<ServiceAdviceFormProps> = ({
                 if (errors.fullName) setErrors((prev) => ({ ...prev, fullName: undefined }))
               }}
               placeholder="e.g., John Doe"
-              className={`w-full px-3.5 py-2.5 rounded-xl bg-white border text-xs sm:text-sm text-[#17252B] focus:outline-none focus:ring-2 focus:ring-[#4DAEB5] transition-all ${
-                errors.fullName ? 'border-red-400 bg-red-50/20' : 'border-[#dbeff2]'
-              }`}
+              className={`w-full px-3.5 py-2.5 rounded-xl bg-white border text-xs sm:text-sm text-[#17252B] focus:outline-none focus:ring-2 focus:ring-[#4DAEB5] transition-all ${errors.fullName ? 'border-red-400 bg-red-50/20' : 'border-[#dbeff2]'
+                }`}
               aria-required="true"
               aria-invalid={Boolean(errors.fullName)}
             />
@@ -190,9 +189,8 @@ export const ServiceAdviceForm: React.FC<ServiceAdviceFormProps> = ({
                 if (errors.email) setErrors((prev) => ({ ...prev, email: undefined }))
               }}
               placeholder="name@example.co.uk"
-              className={`w-full px-3.5 py-2.5 rounded-xl bg-white border text-xs sm:text-sm text-[#17252B] focus:outline-none focus:ring-2 focus:ring-[#4DAEB5] transition-all ${
-                errors.email ? 'border-red-400 bg-red-50/20' : 'border-[#dbeff2]'
-              }`}
+              className={`w-full px-3.5 py-2.5 rounded-xl bg-white border text-xs sm:text-sm text-[#17252B] focus:outline-none focus:ring-2 focus:ring-[#4DAEB5] transition-all ${errors.email ? 'border-red-400 bg-red-50/20' : 'border-[#dbeff2]'
+                }`}
               aria-required="true"
               aria-invalid={Boolean(errors.email)}
             />
@@ -212,10 +210,9 @@ export const ServiceAdviceForm: React.FC<ServiceAdviceFormProps> = ({
                 setPhone(e.target.value)
                 if (errors.phone) setErrors((prev) => ({ ...prev, phone: undefined }))
               }}
-              placeholder="0116 271 8800"
-              className={`w-full px-3.5 py-2.5 rounded-xl bg-white border text-xs sm:text-sm text-[#17252B] focus:outline-none focus:ring-2 focus:ring-[#4DAEB5] transition-all ${
-                errors.phone ? 'border-red-400 bg-red-50/20' : 'border-[#dbeff2]'
-              }`}
+              placeholder="07123 456789"
+              className={`w-full px-3.5 py-2.5 rounded-xl bg-white border text-xs sm:text-sm text-[#17252B] focus:outline-none focus:ring-2 focus:ring-[#4DAEB5] transition-all ${errors.phone ? 'border-red-400 bg-red-50/20' : 'border-[#dbeff2]'
+                }`}
               aria-required="true"
               aria-invalid={Boolean(errors.phone)}
             />

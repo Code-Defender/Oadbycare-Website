@@ -98,7 +98,7 @@ describe('FaqPage Component', () => {
 
     expect(screen.getByText(/Still Have Questions\?/i)).toBeInTheDocument()
     expect(screen.getByText(/Can’t find what you’re looking for\?/i)).toBeInTheDocument()
-    expect(screen.getByText('0116 271 8800')).toBeInTheDocument()
+    expect(screen.getByText('+44 7459 131084')).toBeInTheDocument()
 
     const contactBtn = screen.getByRole('button', { name: /Send Us a Message/i })
     fireEvent.click(contactBtn)

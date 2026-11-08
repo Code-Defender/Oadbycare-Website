@@ -216,13 +216,13 @@ describe('App Root Integration', () => {
 
     // Top Section
     expect(screen.getByText('Are you a Carer? Join Us.')).toBeInTheDocument()
-    expect(screen.getByText('info@oadbycare.co.uk')).toBeInTheDocument()
-    expect(screen.getByText('Oadby, Leicestershire, United Kingdom')).toBeInTheDocument()
+    expect(screen.getAllByText('info@oadbycare.co.uk').length).toBeGreaterThan(0)
+    expect(screen.getByText('19 Holme Drive, Oadby, Leicester, LE2 4HF')).toBeInTheDocument()
 
     // Company info
     expect(
       screen.getByText(
-        'Providing reliable and compassionate domiciliary and live-in care across Oadby and Leicestershire.',
+        /Providing reliable and compassionate domiciliary and live-in care across Oadby and the United Kingdom/i,
       ),
     ).toBeInTheDocument()
     expect(screen.getAllByText(/Oadby Care/i).length).toBeGreaterThan(0)

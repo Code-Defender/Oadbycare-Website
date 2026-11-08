@@ -200,8 +200,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
               </p>
               <p>
                 We understand that inviting someone into your home to provide care is an important
-                decision. It requires trust, understanding, and confidence that your loved one will
-                be treated with kindness and respect.
+                decision. Under the clinical leadership and governance of <strong>Dr Nawazish Karim</strong>, our organisation is founded on the principle that inviting someone into your home to provide care requires absolute trust, empathy, and uncompromising clinical standards.
               </p>
               <p>
                 That's why we take a person-centred approach to everything we do. We take time to

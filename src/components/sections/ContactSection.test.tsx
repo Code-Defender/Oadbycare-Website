@@ -9,7 +9,7 @@ describe('ContactSection', () => {
     expect(screen.getByRole('heading', { name: /Let's Find the Right Care for You/i })).toBeInTheDocument()
     expect(screen.getByText(/Telephone Consultation/i)).toBeInTheDocument()
     expect(screen.getByText(/Verified Direct Email/i)).toBeInTheDocument()
-    expect(screen.getByText(/Head Operational Hub/i)).toBeInTheDocument()
+    expect(screen.getByText(/Registered Office/i)).toBeInTheDocument()
     expect(screen.getByRole('button', { name: /Book Free Care Consultation/i })).toBeInTheDocument()
   })
 

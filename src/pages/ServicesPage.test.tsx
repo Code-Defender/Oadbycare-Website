@@ -112,7 +112,7 @@ describe('ServicesPage Component', () => {
 
   it('renders phone link for direct telephone inquiries', () => {
     render(<ServicesPage />)
-    expect(screen.getByText('0116 271 8800')).toBeInTheDocument()
+    expect(screen.getByText('+44 7459 131084')).toBeInTheDocument()
   })
 })
 

@@ -251,7 +251,7 @@ export const ContactSection: React.FC = () => {
                       required
                       value={formData.phone}
                       onChange={handleChange}
-                      placeholder="e.g. 0116 271 8800"
+                      placeholder="e.g. +44 7459 131084"
                       className="w-full px-3.5 py-2.5 rounded-xl border border-[#dbeff2] text-sm focus:border-[#4DAEB5] focus:ring-1 focus:ring-[#4DAEB5] outline-none"
                     />
                     {errors.phone && <p className="text-rose-600 text-xs mt-1">{errors.phone}</p>}

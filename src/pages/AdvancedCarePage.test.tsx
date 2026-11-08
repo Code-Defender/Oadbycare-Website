@@ -107,7 +107,7 @@ describe('AdvancedCarePage Component', () => {
     render(<AdvancedCarePage onNavigate={onNavigateMock} />)
 
     expect(screen.getByRole('heading', { name: /^Have Questions\?$/i })).toBeInTheDocument()
-    expect(screen.getByText(/0116 271 8800/i)).toBeInTheDocument()
+    expect(screen.getByText(/\+44 7459 131084/i)).toBeInTheDocument()
     expect(screen.getByText(/info@oadbycare\.co\.uk/i)).toBeInTheDocument()
 
     const contactUsBtn = screen.getByRole('button', { name: /^Contact Us$/i })

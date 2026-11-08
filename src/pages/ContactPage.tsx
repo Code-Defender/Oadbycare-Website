@@ -320,14 +320,14 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                 </div>
                 <div className="min-w-0">
                   <span className="text-xs uppercase tracking-wider text-[#52656b] font-semibold block">
-                    Office &amp; Region
+                    Registered Office &amp; Region
                   </span>
-                  <h3 className="text-lg font-bold text-[#17252B] mt-0.5">Location</h3>
+                  <h3 className="text-lg font-bold text-[#17252B] mt-0.5">Registered Office</h3>
                   <p className="text-sm font-semibold text-[#17252B] mt-1">
-                    Oadby, Leicestershire, United Kingdom
+                    19 Holme Drive, Oadby, Leicester, England, LE2 4HF
                   </p>
                   <p className="text-xs text-[#52656b] mt-0.5">
-                    Serving Oadby and surrounding communities.
+                    Serving Oadby, Leicestershire, and surrounding UK communities.
                   </p>
                 </div>
               </div>
@@ -386,6 +386,30 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
                   <ArrowRight className="w-5 h-5 text-slate-300 group-hover:text-[#4DAEB5] group-hover:translate-x-1 transition-all mt-1" />
                 </div>
               </a>
+
+              {/* Block 4: Clinical Governance & Leadership */}
+              <div className="p-5 sm:p-6 rounded-2xl bg-white border border-[#dbeff2] shadow-xs flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-[#e8f6f8] flex items-center justify-center text-[#4DAEB5] shrink-0">
+                  <ShieldCheck className="w-5 h-5" />
+                </div>
+                <div className="min-w-0">
+                  <span className="text-xs uppercase tracking-wider text-[#52656b] font-semibold block">
+                    Clinical Governance
+                  </span>
+                  <h3 className="text-lg font-bold text-[#17252B] mt-0.5">Dr Nawazish Karim</h3>
+                  <p className="text-xs text-[#52656b] mt-0.5">
+                    Clinical &amp; Managing Director
+                  </p>
+                  <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-[#4DAEB5] font-semibold mt-2">
+                    <a href={SITE_CONFIG.phoneHref} className="hover:underline flex items-center gap-1">
+                      <Phone className="w-3 h-3" /> {SITE_CONFIG.displayPhone}
+                    </a>
+                    <a href={SITE_CONFIG.emailHref} className="hover:underline flex items-center gap-1">
+                      <Mail className="w-3 h-3" /> {SITE_CONFIG.email}
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Map-Style Visual / Coverage Radius */}

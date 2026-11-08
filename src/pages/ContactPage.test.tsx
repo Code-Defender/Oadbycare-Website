@@ -34,15 +34,15 @@ describe('ContactPage Component', () => {
     ).toBeInTheDocument()
 
     // Block 1: Location
-    expect(screen.getByText(/Oadby, Leicestershire, United Kingdom/i)).toBeInTheDocument()
-    expect(screen.getByText(/Serving Oadby and surrounding communities/i)).toBeInTheDocument()
+    expect(screen.getByText(/19 Holme Drive, Oadby, Leicester, England, LE2 4HF/i)).toBeInTheDocument()
+    expect(screen.getByText(/Serving Oadby, Leicestershire, and surrounding UK communities/i)).toBeInTheDocument()
 
     // Block 2: Call Us
     expect(screen.getByText(/Direct Care Line/i)).toBeInTheDocument()
-    expect(screen.getByText('0116 271 8800')).toBeInTheDocument()
+    expect(screen.getAllByText('+44 7459 131084').length).toBeGreaterThan(0)
 
     // Block 3: Email Us
-    expect(screen.getByText('info@oadbycare.co.uk')).toBeInTheDocument()
+    expect(screen.getAllByText('info@oadbycare.co.uk').length).toBeGreaterThan(0)
 
     // Map visual
     expect(screen.getByText(/Coverage Radius/i)).toBeInTheDocument()
@@ -175,7 +175,7 @@ describe('ContactPage Component', () => {
       screen.getByRole('heading', { name: /Not Sure Where to Start\?/i }),
     ).toBeInTheDocument()
 
-    expect(screen.getByText(/Call Us – 0116 271 8800/i)).toBeInTheDocument()
+    expect(screen.getByText(/Call Us – \+44 7459 131084/i)).toBeInTheDocument()
 
     const exploreBtn = screen.getByRole('button', { name: /Explore Our Services/i })
     expect(exploreBtn).toBeInTheDocument()

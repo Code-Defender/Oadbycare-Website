@@ -56,7 +56,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </span>
             <div className="inline-flex items-center gap-2 text-slate-300">
               <MapPin className="w-4 h-4 text-[#4DAEB5]" />
-              <span>Oadby, Leicestershire, United Kingdom</span>
+              <span>19 Holme Drive, Oadby, Leicester, LE2 4HF</span>
             </div>
           </div>
         </div>
@@ -81,10 +81,20 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             </div>
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">
               Providing reliable and compassionate domiciliary and live-in care across Oadby and
-              Leicestershire.
+              the United Kingdom, under the clinical leadership of Dr Nawazish Karim.
             </p>
-            <div className="pt-1 text-xs text-slate-400">
-              Registered in England &amp; Wales | Care Standards Compliant
+            <div className="pt-1 text-xs text-slate-400 space-y-1">
+              <div>Registered Office: 19 Holme Drive, Oadby, Leicester, England, LE2 4HF</div>
+
+              <div className="text-slate-300 font-medium pt-1 flex flex-wrap items-center gap-x-3 gap-y-1">
+                <a href={SITE_CONFIG.phoneHref} className="text-[#4DAEB5] hover:underline">
+                  {SITE_CONFIG.displayPhone}
+                </a>
+                <span>•</span>
+                <a href={SITE_CONFIG.emailHref} className="text-[#4DAEB5] hover:underline">
+                  {SITE_CONFIG.email}
+                </a>
+              </div>
             </div>
           </div>
 
