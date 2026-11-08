@@ -1,7 +1,33 @@
 import React from 'react'
 import { STITCH_SERVICES } from '@/config/site'
+import type { AppPage } from '@/types'
 
-export const ServicesSection: React.FC = () => {
+const SERVICE_PAGE_MAP: Record<string, AppPage> = {
+  specialised: 'specialized-care',
+  'companionship-daily-living': 'support-workers',
+  'advanced-care': 'advanced-care',
+  'registered-nurses': 'registered-nurses',
+}
+
+export interface ServicesSectionProps {
+  onNavigate?: (page: AppPage, targetSectionId?: string) => void
+}
+
+export const ServicesSection: React.FC<ServicesSectionProps> = ({ onNavigate }) => {
+  const handleCardClick = (serviceId: string) => {
+    const targetPage = SERVICE_PAGE_MAP[serviceId] || 'services'
+    if (onNavigate) {
+      onNavigate(targetPage)
+    }
+  }
+
+  const handleExploreAllClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (onNavigate) {
+      e.preventDefault()
+      onNavigate('services')
+    }
+  }
+
   return (
     <section className="space-y-10" data-purpose="services" id="services-section">
       <div className="text-center max-w-3xl mx-auto space-y-3">
@@ -21,13 +47,22 @@ export const ServicesSection: React.FC = () => {
         {STITCH_SERVICES.map((service) => (
           <div
             key={service.id}
-            className="bg-white rounded-[2rem] p-6 border border-[#dbeff2] shadow-[0_10px_30px_-5px_rgba(77,174,181,0.08),0_4px_12px_-2px_rgba(0,0,0,0.03)] flex flex-col justify-between hover:shadow-lg transition-all duration-300"
+            onClick={() => handleCardClick(service.id)}
+            role="button"
+            tabIndex={0}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault()
+                handleCardClick(service.id)
+              }
+            }}
+            className="cursor-pointer bg-white rounded-[2rem] p-6 border border-[#dbeff2] shadow-[0_10px_30px_-5px_rgba(77,174,181,0.08),0_4px_12px_-2px_rgba(0,0,0,0.03)] flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group focus:outline-none focus:ring-2 focus:ring-[#4DAEB5]"
           >
             <div className="space-y-4">
               <div className="relative w-full h-36 rounded-2xl overflow-hidden bg-slate-100 mb-3">
                 <img
                   alt={service.imageAlt}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   loading="lazy"
                   src={service.imageSrc}
                 />
@@ -35,16 +70,15 @@ export const ServicesSection: React.FC = () => {
                   {service.scopeBadge}
                 </span>
               </div>
-              <h3 className="text-xl font-bold text-[#17252B]">{service.title}</h3>
+              <h3 className="text-xl font-bold text-[#17252B] group-hover:text-[#4DAEB5] transition-colors">
+                {service.title}
+              </h3>
               <p className="text-[#52656b] text-sm leading-relaxed">{service.description}</p>
             </div>
             <div className="pt-6">
-              <a
-                className="inline-flex items-center text-sm font-semibold text-[#4DAEB5] hover:text-[#3d969c]"
-                href="#contact-section"
-              >
+              <span className="inline-flex items-center text-sm font-semibold text-[#4DAEB5] group-hover:text-[#3d969c] group-hover:translate-x-1 transition-all">
                 More Details →
-              </a>
+              </span>
             </div>
           </div>
         ))}
@@ -57,8 +91,9 @@ export const ServicesSection: React.FC = () => {
           <p className="text-[#52656b] text-sm">Speak with our local coordinators to explore the support package that best suits your family.</p>
         </div>
         <a
-          className="flex-shrink-0 px-7 py-3 rounded-full font-semibold text-sm text-white bg-[#4DAEB5] hover:bg-[#3d969c] shadow-sm transition-colors"
-          href="#contact-section"
+          className="flex-shrink-0 px-7 py-3 rounded-full font-semibold text-sm text-white bg-[#4DAEB5] hover:bg-[#3d969c] shadow-sm transition-colors cursor-pointer"
+          href="#services"
+          onClick={handleExploreAllClick}
         >
           Explore All Services
         </a>

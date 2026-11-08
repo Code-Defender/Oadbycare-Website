@@ -10,6 +10,7 @@ const locationLabels: Record<string, string> = {
   leicester: 'Leicester Central',
   wigston: 'Wigston',
   'south-leics': 'South Leicestershire',
+  other: 'Other UK Location',
 }
 
 const careTypeLabels: Record<string, string> = {
@@ -174,6 +175,7 @@ export const Hero: React.FC<HeroProps> = ({ onCheckAvailability }) => {
                 <option value="leicester">Leicester Central</option>
                 <option value="wigston">Wigston</option>
                 <option value="south-leics">South Leicestershire</option>
+                <option value="other">Other (UK Nationwide)</option>
               </select>
             </div>
           </div>

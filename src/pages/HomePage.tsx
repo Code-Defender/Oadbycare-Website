@@ -14,13 +14,13 @@ export interface HomePageProps {
   onNavigate?: (page: AppPage, targetSectionId?: string) => void
 }
 
-export const HomePage: React.FC<HomePageProps> = () => {
+export const HomePage: React.FC<HomePageProps> = ({ onNavigate }) => {
   return (
     <main id="main-content" className="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full space-y-16 md:space-y-24 py-8">
       <Hero />
       <CareBenefitsSection />
       <AboutUsSection />
-      <ServicesSection />
+      <ServicesSection onNavigate={onNavigate} />
       <MissionValuesSection />
       <TrustStatsStrip />
       <TestimonialsSection />
