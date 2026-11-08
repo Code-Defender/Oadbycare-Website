@@ -8,10 +8,10 @@ export const AboutUsSection: React.FC = () => {
         <div className="lg:col-span-6 relative">
           <div className="relative z-10 rounded-[1.75rem] overflow-hidden border-2 border-white shadow-md bg-white">
             <img
-              alt="A friendly male carer walking in a bright garden hallway with an elderly gentleman, dignified, warm natural light, comfortable British residential home"
+              alt="A friendly male carer walking in a bright sunlit conservatory with an elderly gentleman, dignified, warm natural light, comfortable British residential home"
               className="w-full h-auto object-cover max-h-[440px] hover:scale-102 transition-transform duration-500"
               loading="lazy"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGXTgrL9XWHeiz6vfoVn-S9h99gLd_j85Gmy4P-1fiF2Zg0Tz3yDh4CbxO6YJKO_azTpUqr__O7PTr5iZzAQV7gkxyQT7NqC1gBwzWxjtRTY-clxp44f5GdwMST_kGml0OQDDWqaonKssmFIFEUqlolhyWE6th0TZbPQjh45urLii7C76LhGu5uLZwsMteF1JK4xcuhzrxUQlh9COUL3KgJsk0Gn_g0Avd6Dks9vXd"
+              src="/home-about.jpg"
             />
           </div>
           {/* Organic accent background element */}

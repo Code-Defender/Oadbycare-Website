@@ -75,9 +75,8 @@ export const STITCH_SERVICES = [
     scopeBadge: 'From 30-min visits',
     description:
       'Personalised support tailored to individual circumstances, preferences, and clinical care requirements.',
-    imageSrc:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBvJ0hfpzBTVZYpk9BUuvD81t0CcIuMBg-ryz3eWAtgUqgONFcPL7FBElB7Hs0zsJ0Zuppgne23oSo5H5fyKr0FG3tmkJ2k8SJYdCZb7MOPmKoDsRREIcA2s2iwT7YwRPsoBqIFhQKpCH-7we73kfsWHPSI75VB5h0wTZUdG26U-Uv7PpPkMyXcmgIx72RUUeU1a0dGw96kUto9ybvuM4GnuuN55Ie1bo9uA8tGj16V',
-    imageAlt: 'Elderly man in a wheelchair smiling comfortably at home',
+    imageSrc: '/services/specialized-care.jpg',
+    imageAlt: 'Compassionate carer supporting an elderly gentleman with mobility in a comfortable living room',
   },
   {
     id: 'companionship-daily-living',
@@ -85,9 +84,8 @@ export const STITCH_SERVICES = [
     scopeBadge: 'Social outings & meal prep',
     description:
       'Dependable assistance with everyday activities, independence, warm conversation, and personal wellbeing.',
-    imageSrc:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCQatif3d-0KTZbrZHvzTj9D5msGT_pXv7tE1EdIajXzMTnBPXd0zE7uqW5J-RonKs09z_eCHGxcvg6XIuCudDOccZcARiP4MSO34B_Jpp80araR8JWrezSwnq-hJQa5MqqsCyIy-Yy_Mxd3EuwDLXUfj7_lC1yZDIeu1XlD5_LJOyig3RZnph8SlqeorHc_cQEHQXqzMOARnajlozPXxxJaYPh3x9zTT8fQ8NEM3Dv',
-    imageAlt: 'A caring support worker helping an older adult prepare healthy food in a bright modern kitchen',
+    imageSrc: '/services/support-workers.jpg',
+    imageAlt: 'Friendly support worker sharing tea and conversation with an elderly lady in a warm kitchen',
   },
   {
     id: 'advanced-care',
@@ -95,9 +93,8 @@ export const STITCH_SERVICES = [
     scopeBadge: 'Dementia & clinical oversight',
     description:
       'Individualised support for people with more complex care needs, delivered with dignity and compassion.',
-    imageSrc:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuCTFNeFiwLwmvL4Fb8c1jtpQH0lvw1TIVfVL6FIboJ-76M7xtV-rRGUeAY614wN8aD27w9z3tclQn9Y8i3lB9xMpUmO1gUkOvtDdYuI17VNuepKK7eOFnycfMVErkNzTtcM8XhhEvr-4e4GnNaYA5PKm6vwy3cIfu07CAYZN6THhH9Mx0xD0NNIblX9pOnY6dhLep1MCIiO5bVDbvZnEwgjyUdG852UvzlUxMHzyb3-',
-    imageAlt: 'Advanced Care - Nurse caring for elderly patient in bed',
+    imageSrc: '/services/advanced-care.jpg',
+    imageAlt: 'Attentive carer holding hands warmly with an elderly client in a comfortable home armchair',
   },
   {
     id: 'registered-nurses',
@@ -105,9 +102,8 @@ export const STITCH_SERVICES = [
     scopeBadge: 'Medication & wound management',
     description:
       'Professional nursing support at home, helping individuals receive appropriate care in familiar surroundings.',
-    imageSrc:
-      'https://lh3.googleusercontent.com/aida-public/AB6AXuBcVtzf0O6PJnF6-1VPUnVs3OLx-eEOkDkSSSrMe_EQjxoUgWD9EwKSC-DMAAnhq_DrvihSFcTtTGMT3MrOfHUGXhVfRB_wuahUMfj25pRN4oXB_Igd2QFK3Q1W36fFPO3yWXRl76vNE1jctfuvo4EeeJ1ZcfKfhZ_w40OZQycHgcrZ79q2y2-k_FMJERt18df_8lZvczPVFOkHHUY4CO93470rn2oZeQID_tjkb2dR',
-    imageAlt: 'Warm editorial photo of a nurse in professional medical attire checking notes with client',
+    imageSrc: '/services/registered-nurses.jpg',
+    imageAlt: 'Qualified registered nurse in uniform reviewing clinical medication with an elderly client at home',
   },
 ] as const
 

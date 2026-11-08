@@ -159,8 +159,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           <div className="lg:col-span-5 relative order-2 lg:order-1">
             <div className="relative rounded-[2rem] overflow-hidden border border-[#dbeff2] shadow-md bg-white">
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcVtzf0O6PJnF6-1VPUnVs3OLx-eEOkDkSSSrMe_EQjxoUgWD9EwKSC-DMAAnhq_DrvihSFcTtTGMT3MrOfHUGXhVfRB_wuahUMfj25pRN4oXB_Igd2QFK3Q1W36fFPO3yWXRl76vNE1jctfuvo4EeeJ1ZcfKfhZ_w40OZQycHgcrZ79q2y2-k_FMJERt18df_8lZvczPVFOkHHUY4CO93470rn2oZeQID_tjkb2dR"
-                alt="Professional home carer having a friendly conversation and discussing care plan with an elderly person in a warm British living room"
+                src="/about-who-we-are.jpg"
+                alt="Professional British home care worker having an attentive conversation with an elderly lady and her family over tea in a cozy living room"
                 className="w-full h-[360px] sm:h-[400px] object-cover hover:scale-102 transition-transform duration-500"
                 loading="lazy"
               />
@@ -315,7 +315,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           <div className="bg-white rounded-[2rem] border border-[#dbeff2] overflow-hidden shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
             <div className="relative h-44 w-full bg-slate-100 overflow-hidden">
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQatif3d-0KTZbrZHvzTj9D5msGT_pXv7tE1EdIajXzMTnBPXd0zE7uqW5J-RonKs09z_eCHGxcvg6XIuCudDOccZcARiP4MSO34B_Jpp80araR8JWrezSwnq-hJQa5MqqsCyIy-Yy_Mxd3EuwDLXUfj7_lC1yZDIeu1XlD5_LJOyig3RZnph8SlqeorHc_cQEHQXqzMOARnajlozPXxxJaYPh3x9zTT8fQ8NEM3Dv"
+                src="/values/compassion.jpg"
                 alt="Caregiver gently offering compassionate support and holding hand of client in bright home"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 loading="lazy"
@@ -342,7 +342,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           <div className="bg-white rounded-[2rem] border border-[#dbeff2] overflow-hidden shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
             <div className="relative h-44 w-full bg-slate-100 overflow-hidden">
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvJ0hfpzBTVZYpk9BUuvD81t0CcIuMBg-ryz3eWAtgUqgONFcPL7FBElB7Hs0zsJ0Zuppgne23oSo5H5fyKr0FG3tmkJ2k8SJYdCZb7MOPmKoDsRREIcA2s2iwT7YwRPsoBqIFhQKpCH-7we73kfsWHPSI75VB5h0wTZUdG26U-Uv7PpPkMyXcmgIx72RUUeU1a0dGw96kUto9ybvuM4GnuuN55Ie1bo9uA8tGj16V"
+                src="/values/dignity.jpg"
                 alt="Dignified elderly client enjoying an independent, peaceful and comfortable moment at home"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 loading="lazy"
@@ -369,8 +369,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           <div className="bg-white rounded-[2rem] border border-[#dbeff2] overflow-hidden shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
             <div className="relative h-44 w-full bg-slate-100 overflow-hidden">
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcVtzf0O6PJnF6-1VPUnVs3OLx-eEOkDkSSSrMe_EQjxoUgWD9EwKSC-DMAAnhq_DrvihSFcTtTGMT3MrOfHUGXhVfRB_wuahUMfj25pRN4oXB_Igd2QFK3Q1W36fFPO3yWXRl76vNE1jctfuvo4EeeJ1ZcfKfhZ_w40OZQycHgcrZ79q2y2-k_FMJERt18df_8lZvczPVFOkHHUY4CO93470rn2oZeQID_tjkb2dR"
-                alt="Home care professional discussing a care plan in an open, trustworthy conversation"
+                src="/values/trust.jpg"
+                alt="Home care professional arriving with a warm greeting in an open, trustworthy visit"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 loading="lazy"
               />
@@ -396,8 +396,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           <div className="bg-white rounded-[2rem] border border-[#dbeff2] overflow-hidden shadow-xs hover:shadow-md transition-all flex flex-col justify-between">
             <div className="relative h-44 w-full bg-slate-100 overflow-hidden">
               <img
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTFNeFiwLwmvL4Fb8c1jtpQH0lvw1TIVfVL6FIboJ-76M7xtV-rRGUeAY614wN8aD27w9z3tclQn9Y8i3lB9xMpUmO1gUkOvtDdYuI17VNuepKK7eOFnycfMVErkNzTtcM8XhhEvr-4e4GnNaYA5PKm6vwy3cIfu07CAYZN6THhH9Mx0xD0NNIblX9pOnY6dhLep1MCIiO5bVDbvZnEwgjyUdG852UvzlUxMHzyb3-"
-                alt="Professional healthcare worker ensuring high medical standards and attentive support"
+                src="/values/quality.jpg"
+                alt="Professional healthcare worker ensuring high medical standards and attentive care planning"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 loading="lazy"
               />

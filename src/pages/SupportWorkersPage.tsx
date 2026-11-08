@@ -54,9 +54,9 @@ export const SupportWorkersPage: React.FC<SupportWorkersPageProps> = ({ onNaviga
         className="relative w-full h-64 sm:h-72 lg:h-80 bg-slate-900 overflow-hidden"
       >
         <img
-          src="/about-hero.jpg"
-          alt="Peaceful countryside landscape"
-          className="w-full h-full object-cover object-center opacity-75"
+          src="/service-banner-hero.jpg"
+          alt="Peaceful British countryside landscape with rolling green hills"
+          className="w-full h-full object-cover object-center opacity-85"
           loading="eager"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/20 to-transparent pointer-events-none" />

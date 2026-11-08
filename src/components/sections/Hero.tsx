@@ -55,11 +55,11 @@ export const Hero: React.FC<HeroProps> = ({ onCheckAvailability }) => {
       {/* Background Image & Soft Teal Gradients */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcs3PuGEVQDqDKRVa3jtR2snIK6HFjYLHCp7n5yMgxcWaQDRMzyFB_B0--1O8j-pGSIxsbpyJPdArYTI6qLg_PZz765P3u4W4OgmcLoe7GJ7h6BxhTHq3ePTAF0aT8D-103HY1tfW0a80kuK9wQOIo2bI_-N0mkM8bgIKvg5yxSgcaRiKu356YGyaLc7sjVr1sz9kjopBHHxPggGF52ckKzwBasp00fkt2kKNsJA7nxBg1g0PnJ_l_wxlCcwReEvMyhVXwfXXXe2qYRCE"
-          alt="Doctor and patient consultation in a warm, bright room"
-          className="w-full h-full object-cover object-right md:object-[78%_center] transition-transform duration-700"
+          src="/hero-home-care.jpg"
+          alt="Compassionate home care worker smiling with an elderly client in a warm British home living room"
+          className="w-full h-full object-cover object-right md:object-[75%_center] transition-transform duration-700"
         />
-        {/* Scrim cleanly fades out before reaching the doctor, keeping him 100% clear & sharp */}
+        {/* Scrim cleanly fades out before reaching the subjects, keeping them 100% clear & sharp */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#eaf8fa] via-[#eaf8fa]/85 via-30% to-transparent to-48% pointer-events-none" />
         <div className="absolute inset-0 bg-gradient-to-t from-[#eaf8fa] via-[#eaf8fa]/70 to-transparent md:hidden pointer-events-none" />
       </div>
