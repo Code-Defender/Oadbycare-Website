@@ -54,7 +54,7 @@ export const HealthcareAssistancePage: React.FC<HealthcareAssistancePageProps> =
       >
         <img
           src="/about-hero.jpg"
-          alt="Peaceful Leicestershire countryside landscape"
+          alt="Peaceful countryside landscape"
           className="w-full h-full object-cover object-center opacity-75"
           loading="eager"
         />
@@ -94,7 +94,7 @@ export const HealthcareAssistancePage: React.FC<HealthcareAssistancePageProps> =
                 Healthcare Assistance
               </h1>
               <p className="text-xs sm:text-sm text-[#52656b] mt-1.5 leading-relaxed">
-                We focus on delivering high-quality Healthcare Assistance across multiple locations throughout the UK
+                Providing compassionate Healthcare Assistance across Leicestershire and multiple locations throughout the UK
               </p>
             </div>
           </div>

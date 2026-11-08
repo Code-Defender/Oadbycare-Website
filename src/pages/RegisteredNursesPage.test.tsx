@@ -13,7 +13,7 @@ describe('RegisteredNursesPage Component', () => {
       screen.getByRole('heading', { level: 1, name: /^Registered Nurses$/i }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText(/We focus on delivering high-quality Registered Nursing care across multiple locations throughout the UK/i),
+      screen.getByText(/Providing qualified Registered Nursing care across Leicestershire and multiple locations throughout the UK/i),
     ).toBeInTheDocument()
 
     // Breadcrumb

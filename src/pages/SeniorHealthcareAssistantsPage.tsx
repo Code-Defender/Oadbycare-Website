@@ -56,7 +56,7 @@ export const SeniorHealthcareAssistantsPage: React.FC<SeniorHealthcareAssistants
       >
         <img
           src="/about-hero.jpg"
-          alt="Peaceful Leicestershire countryside landscape"
+          alt="Peaceful countryside landscape"
           className="w-full h-full object-cover object-center opacity-75"
           loading="eager"
         />
@@ -96,7 +96,7 @@ export const SeniorHealthcareAssistantsPage: React.FC<SeniorHealthcareAssistants
                 Senior Healthcare Assistants
               </h1>
               <p className="text-xs sm:text-sm text-[#52656b] mt-1.5 leading-relaxed">
-                We focus on delivering high-quality Senior Healthcare Assistants across multiple locations throughout the UK
+                Providing experienced Senior Healthcare Assistants across Leicestershire and multiple locations throughout the UK
               </p>
             </div>
           </div>

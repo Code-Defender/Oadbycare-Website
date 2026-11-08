@@ -94,7 +94,7 @@ describe('App Root Integration', () => {
       screen.getByRole('heading', { level: 1, name: /^Specialized Care$/i }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText(/We focus on delivering high-quality Specialized Care across multiple locations throughout the UK/i),
+      screen.getByText(/Providing high-quality Specialized Care across Leicestershire and multiple locations throughout the UK/i),
     ).toBeInTheDocument()
     expect(screen.getByText(/Our Specialized Care Services Include/i)).toBeInTheDocument()
   })
@@ -114,7 +114,7 @@ describe('App Root Integration', () => {
       screen.getByRole('heading', { level: 1, name: /^Support Workers$/i }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText(/We focus on delivering high-quality Support Worker services across multiple locations throughout the UK/i),
+      screen.getByText(/Providing dedicated Support Worker services across Leicestershire and multiple locations throughout the UK/i),
     ).toBeInTheDocument()
     expect(screen.getByText(/Our Support Worker Services Include/i)).toBeInTheDocument()
   })
@@ -134,7 +134,7 @@ describe('App Root Integration', () => {
       screen.getByRole('heading', { level: 1, name: /^Advanced Care$/i }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText(/We focus on delivering high-quality Advanced Care services across multiple locations throughout the UK/i),
+      screen.getByText(/Providing specialist Advanced Care across Leicestershire and multiple locations throughout the UK/i),
     ).toBeInTheDocument()
     expect(screen.getByText(/Our Advanced Care Services Include/i)).toBeInTheDocument()
   })
@@ -154,7 +154,7 @@ describe('App Root Integration', () => {
       screen.getByRole('heading', { level: 1, name: /^Registered Nurses$/i }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText(/We focus on delivering high-quality Registered Nursing care across multiple locations throughout the UK/i),
+      screen.getByText(/Providing qualified Registered Nursing care across Leicestershire and multiple locations throughout the UK/i),
     ).toBeInTheDocument()
     expect(screen.getByText(/Our Registered Nursing Services Include/i)).toBeInTheDocument()
   })
@@ -174,7 +174,7 @@ describe('App Root Integration', () => {
       screen.getByRole('heading', { level: 1, name: /^Senior Healthcare Assistants$/i }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText(/We focus on delivering high-quality Senior Healthcare Assistants across multiple locations throughout the UK/i),
+      screen.getByText(/Providing experienced Senior Healthcare Assistants across Leicestershire and multiple locations throughout the UK/i),
     ).toBeInTheDocument()
     expect(screen.getByText(/Our Senior Healthcare Assistant Services Include/i)).toBeInTheDocument()
   })
@@ -194,7 +194,7 @@ describe('App Root Integration', () => {
       screen.getByRole('heading', { level: 1, name: /^Healthcare Assistance$/i }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText(/We focus on delivering high-quality Healthcare Assistance across multiple locations throughout the UK/i),
+      screen.getByText(/Providing compassionate Healthcare Assistance across Leicestershire and multiple locations throughout the UK/i),
     ).toBeInTheDocument()
     expect(screen.getByText(/Our Healthcare Assistance Services Include/i)).toBeInTheDocument()
   })

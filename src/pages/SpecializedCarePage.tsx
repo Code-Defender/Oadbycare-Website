@@ -55,7 +55,7 @@ export const SpecializedCarePage: React.FC<SpecializedCarePageProps> = ({ onNavi
       >
         <img
           src="/about-hero.jpg"
-          alt="Peaceful Leicestershire countryside landscape"
+          alt="Peaceful countryside landscape"
           className="w-full h-full object-cover object-center opacity-75"
           loading="eager"
         />
@@ -95,7 +95,7 @@ export const SpecializedCarePage: React.FC<SpecializedCarePageProps> = ({ onNavi
                 Specialized Care
               </h1>
               <p className="text-xs sm:text-sm text-[#52656b] mt-1.5 leading-relaxed">
-                We focus on delivering high-quality Specialized Care across multiple locations throughout the UK
+                Providing high-quality Specialized Care across Leicestershire and multiple locations throughout the UK
               </p>
             </div>
           </div>

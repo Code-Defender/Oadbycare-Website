@@ -13,7 +13,7 @@ describe('SeniorHealthcareAssistantsPage Component', () => {
       screen.getByRole('heading', { level: 1, name: /^Senior Healthcare Assistants$/i }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText(/We focus on delivering high-quality Senior Healthcare Assistants across multiple locations throughout the UK/i),
+      screen.getByText(/Providing experienced Senior Healthcare Assistants across Leicestershire and multiple locations throughout the UK/i),
     ).toBeInTheDocument()
 
     // Breadcrumb
