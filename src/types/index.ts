@@ -71,6 +71,17 @@ export interface NavItem {
   isCta?: boolean
 }
 
-export type AppPage = 'home' | 'about' | 'services' | 'faq' | 'contact' | 'specialized-care'
+export type AppPage =
+  | 'home'
+  | 'about'
+  | 'services'
+  | 'faq'
+  | 'contact'
+  | 'specialized-care'
+  | 'support-workers'
+  | 'advanced-care'
+  | 'registered-nurses'
+  | 'senior-healthcare-assistants'
+  | 'healthcare-assistance'
 
 

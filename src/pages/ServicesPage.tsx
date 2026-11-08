@@ -95,6 +95,16 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate, onSelect
     } else if (onNavigate) {
       if (serviceId === 'specialized-care') {
         onNavigate('specialized-care')
+      } else if (serviceId === 'support-workers') {
+        onNavigate('support-workers')
+      } else if (serviceId === 'advanced-care') {
+        onNavigate('advanced-care')
+      } else if (serviceId === 'registered-nurses') {
+        onNavigate('registered-nurses')
+      } else if (serviceId === 'senior-healthcare-assistants') {
+        onNavigate('senior-healthcare-assistants')
+      } else if (serviceId === 'healthcare-assistance') {
+        onNavigate('healthcare-assistance')
       } else {
         onNavigate('contact')
       }

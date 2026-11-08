@@ -80,9 +80,25 @@ describe('ServicesPage Component', () => {
     fireEvent.click(arrangeButtons[0])
     expect(onNavigateMock).toHaveBeenCalledWith('specialized-care')
 
-    // Second card (Support Workers) navigates to contact
+    // Second card (Support Workers) navigates to support-workers
     fireEvent.click(arrangeButtons[1])
-    expect(onNavigateMock).toHaveBeenCalledWith('contact')
+    expect(onNavigateMock).toHaveBeenCalledWith('support-workers')
+
+    // Third card (Advanced Care) navigates to advanced-care
+    fireEvent.click(arrangeButtons[2])
+    expect(onNavigateMock).toHaveBeenCalledWith('advanced-care')
+
+    // Fourth card (Registered Nurses) navigates to registered-nurses
+    fireEvent.click(arrangeButtons[3])
+    expect(onNavigateMock).toHaveBeenCalledWith('registered-nurses')
+
+    // Fifth card (Senior Healthcare Assistants) navigates to senior-healthcare-assistants
+    fireEvent.click(arrangeButtons[4])
+    expect(onNavigateMock).toHaveBeenCalledWith('senior-healthcare-assistants')
+
+    // Sixth card (Healthcare Assistance) navigates to healthcare-assistance
+    fireEvent.click(arrangeButtons[5])
+    expect(onNavigateMock).toHaveBeenCalledWith('healthcare-assistance')
   })
 
   it('calls onSelectService callback when provided', () => {

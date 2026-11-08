@@ -62,7 +62,15 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage = 'home', onNavigate
     if (currentPage === 'faq') {
       return label === 'F.A.Q'
     }
-    if (currentPage === 'services' || currentPage === 'specialized-care') {
+    if (
+      currentPage === 'services' ||
+      currentPage === 'specialized-care' ||
+      currentPage === 'support-workers' ||
+      currentPage === 'advanced-care' ||
+      currentPage === 'registered-nurses' ||
+      currentPage === 'senior-healthcare-assistants' ||
+      currentPage === 'healthcare-assistance'
+    ) {
       return label === 'Services'
     }
     if (currentPage === 'about') {

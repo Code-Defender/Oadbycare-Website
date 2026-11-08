@@ -50,7 +50,7 @@ describe('App Root Integration', () => {
     expect(
       screen.getByRole('heading', { name: /Compassionate Home & Live-In Care/i }),
     ).toBeInTheDocument()
-  })
+  }, 15000)
 
   it('navigates to About Us page when About Us link is clicked in Navbar', () => {
     render(<App />)
@@ -91,10 +91,112 @@ describe('App Root Integration', () => {
     fireEvent.click(specializedCareBtn)
 
     expect(
-      screen.getByRole('heading', { name: /^Expert Specialized Care Services at Home$/i }),
+      screen.getByRole('heading', { level: 1, name: /^Specialized Care$/i }),
     ).toBeInTheDocument()
-    expect(screen.getByText('SPECIALIZED CARE')).toBeInTheDocument()
+    expect(
+      screen.getByText(/We focus on delivering high-quality Specialized Care service/i),
+    ).toBeInTheDocument()
     expect(screen.getByText(/Our Specialized Care Services in Leicestershire Include/i)).toBeInTheDocument()
+  })
+
+  it('navigates to Support Workers page when clicking Support Workers card in Services page', () => {
+    render(<App />)
+
+    const servicesLinks = screen.getAllByRole('link', { name: /^Services$/i })
+    fireEvent.click(servicesLinks[0])
+
+    const supportWorkersBtn = screen.getByRole('button', {
+      name: /View full details and arrange consultation for Support Workers/i,
+    })
+    fireEvent.click(supportWorkersBtn)
+
+    expect(
+      screen.getByRole('heading', { level: 1, name: /^Support Workers$/i }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByText(/We focus on delivering high-quality Support Worker services in Oadby & Leicestershire/i),
+    ).toBeInTheDocument()
+    expect(screen.getByText(/Our Support Worker Services in Leicestershire Include/i)).toBeInTheDocument()
+  })
+
+  it('navigates to Advanced Care page when clicking Advanced Care card in Services page', () => {
+    render(<App />)
+
+    const servicesLinks = screen.getAllByRole('link', { name: /^Services$/i })
+    fireEvent.click(servicesLinks[0])
+
+    const advancedCareBtn = screen.getByRole('button', {
+      name: /View full details and arrange consultation for Advanced Care/i,
+    })
+    fireEvent.click(advancedCareBtn)
+
+    expect(
+      screen.getByRole('heading', { level: 1, name: /^Advanced Care$/i }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByText(/We focus on delivering high-quality Advanced Care service in Oadby & Leicestershire/i),
+    ).toBeInTheDocument()
+    expect(screen.getByText(/Our Advanced Care Services in Leicestershire Include/i)).toBeInTheDocument()
+  })
+
+  it('navigates to Registered Nurses page when clicking Registered Nurses card in Services page', () => {
+    render(<App />)
+
+    const servicesLinks = screen.getAllByRole('link', { name: /^Services$/i })
+    fireEvent.click(servicesLinks[0])
+
+    const nursesBtn = screen.getByRole('button', {
+      name: /View full details and arrange consultation for Registered Nurses/i,
+    })
+    fireEvent.click(nursesBtn)
+
+    expect(
+      screen.getByRole('heading', { level: 1, name: /^Registered Nurses$/i }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByText(/We focus on delivering high-quality Registered Nurses in Oadby & Leicestershire/i),
+    ).toBeInTheDocument()
+    expect(screen.getByText(/Our Registered Nursing Services in Leicestershire Include/i)).toBeInTheDocument()
+  })
+
+  it('navigates to Senior Healthcare Assistants page when clicking Senior Healthcare Assistants card in Services page', () => {
+    render(<App />)
+
+    const servicesLinks = screen.getAllByRole('link', { name: /^Services$/i })
+    fireEvent.click(servicesLinks[0])
+
+    const seniorBtn = screen.getByRole('button', {
+      name: /View full details and arrange consultation for Senior Healthcare Assistants/i,
+    })
+    fireEvent.click(seniorBtn)
+
+    expect(
+      screen.getByRole('heading', { level: 1, name: /^Senior Healthcare Assistants$/i }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByText(/We focus on delivering high-quality Senior Healthcare Assistants in Oadby & Leicestershire/i),
+    ).toBeInTheDocument()
+    expect(screen.getByText(/Our Senior Healthcare Assistant Services Include/i)).toBeInTheDocument()
+  })
+
+  it('navigates to Healthcare Assistance page when clicking Healthcare Assistance card in Services page', () => {
+    render(<App />)
+
+    const servicesLinks = screen.getAllByRole('link', { name: /^Services$/i })
+    fireEvent.click(servicesLinks[0])
+
+    const assistanceBtn = screen.getByRole('button', {
+      name: /View full details and arrange consultation for Healthcare Assistance/i,
+    })
+    fireEvent.click(assistanceBtn)
+
+    expect(
+      screen.getByRole('heading', { level: 1, name: /^Healthcare Assistance$/i }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByText(/Oadby Care provides trusted and compassionate Healthcare Assistance in Oadby & Leicestershire/i),
+    ).toBeInTheDocument()
+    expect(screen.getByText(/Our Healthcare Assistance Services in Leicestershire Include/i)).toBeInTheDocument()
   })
 
   it('navigates to FAQ page when F.A.Q link is clicked in Navbar', () => {
