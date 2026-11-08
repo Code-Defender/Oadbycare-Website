@@ -13,7 +13,7 @@ describe('SpecializedCarePage Component', () => {
       screen.getByRole('heading', { level: 1, name: /^Specialized Care$/i }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText(/We focus on delivering high-quality Specialized Care service/i),
+      screen.getByText(/We focus on delivering high-quality Specialized Care across multiple locations throughout the UK/i),
     ).toBeInTheDocument()
 
     // Breadcrumb
@@ -38,7 +38,7 @@ describe('SpecializedCarePage Component', () => {
 
     // Introduction heading
     expect(
-      screen.getByRole('heading', { name: /^Expert Specialized Care Services at Home in Leicestershire$/i }),
+      screen.getByRole('heading', { name: /^Expert Specialized Care Services Delivered in the Comfort of Home$/i }),
     ).toBeInTheDocument()
 
     // 7 Services Included List
@@ -53,13 +53,13 @@ describe('SpecializedCarePage Component', () => {
     // Key Content Sections
     expect(screen.getByRole('heading', { name: /^What Is Specialized Care\?$/i })).toBeInTheDocument()
     expect(
-      screen.getByRole('heading', { name: /^Why Choose Our Specialized Care in Leicestershire\?$/i }),
+      screen.getByRole('heading', { name: /^Why Choose Our Specialized Care\?$/i }),
     ).toBeInTheDocument()
     expect(
       screen.getByRole('heading', { name: /^Specialist Support in the Comfort of Home$/i }),
     ).toBeInTheDocument()
     expect(
-      screen.getByRole('heading', { name: /^Arrange Specialized Care in Leicestershire$/i }),
+      screen.getByRole('heading', { name: /^Arrange Specialized Care Today$/i }),
     ).toBeInTheDocument()
   })
 

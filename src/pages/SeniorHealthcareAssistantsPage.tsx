@@ -24,7 +24,7 @@ const WHY_CHOOSE_LIST = [
   'Highly trained and DBS-checked senior carers',
   'Experience in complex and specialist care needs',
   'Personalised care plans tailored to each client',
-  'Flexible support options across Leicestershire',
+  'Flexible support options across Leicestershire and multiple UK locations',
   'Compassionate and respectful approach',
 ] as const
 
@@ -96,7 +96,7 @@ export const SeniorHealthcareAssistantsPage: React.FC<SeniorHealthcareAssistants
                 Senior Healthcare Assistants
               </h1>
               <p className="text-xs sm:text-sm text-[#52656b] mt-1.5 leading-relaxed">
-                We focus on delivering high-quality Senior Healthcare Assistants in Oadby &amp; Leicestershire
+                We focus on delivering high-quality Senior Healthcare Assistants across multiple locations throughout the UK
               </p>
             </div>
           </div>
@@ -116,18 +116,18 @@ export const SeniorHealthcareAssistantsPage: React.FC<SeniorHealthcareAssistants
                 id="senior-intro-heading"
                 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#17252B]"
               >
-                Experienced Senior Healthcare Assistants Supporting Families Across Leicestershire
+                Experienced Senior Healthcare Assistants Supporting Families Across the UK
               </h2>
               <div className="space-y-3.5 text-sm sm:text-base text-[#52656b] leading-relaxed">
                 <p>
-                  Oadby Care provides professional and compassionate Senior Healthcare Assistants in
-                  Leicestershire, delivering reliable home care support tailored to individual needs. Our
-                  experienced senior carers assist elderly individuals, adults with complex needs, and
-                  those requiring enhanced supervision within the comfort of their own homes.
+                  Oadby Care provides experienced Senior Healthcare Assistants who bring enhanced
+                  expertise and reassuring leadership to home-based care. Serving Leicestershire and
+                  communities across the UK, our senior carers assist older adults, individuals with
+                  complex requirements, and clients who benefit from closer supervision.
                 </p>
                 <p>
-                  We focus on delivering high-quality home care in Leicestershire, ensuring every client
-                  receives personalised support that promotes dignity, safety, and independence.
+                  We focus on delivering high-quality, personalised care that safeguards client wellbeing,
+                  respects dignity, and reinforces personal independence at home.
                 </p>
               </div>
             </section>
@@ -178,29 +178,30 @@ export const SeniorHealthcareAssistantsPage: React.FC<SeniorHealthcareAssistants
               </h2>
               <div className="space-y-3 text-sm sm:text-base text-[#52656b] leading-relaxed">
                 <p>
-                  Our Senior Healthcare Assistants in Leicestershire provide advanced support beyond basic
-                  domiciliary care. They are experienced professionals trained to handle more complex care
-                  requirements while supervising and guiding other care staff when needed.
+                  Senior Healthcare Assistants provide an elevated tier of care that bridges general
+                  domiciliary support and specialised clinical assistance. Equipped with advanced
+                  training, they manage complex routines, observe health changes proactively, and mentor
+                  other care team members.
                 </p>
                 <p>
-                  This service is ideal for individuals who require consistent, higher-level elderly care
-                  in Leicestershire, including those living with long-term conditions or mobility challenges.
+                  This service is ideal for individuals with progressing health conditions, complex
+                  mobility needs, or those who require heightened vigilance and seasoned care experience.
                 </p>
               </div>
             </section>
 
-            {/* 4. Why Choose Our Senior Healthcare Assistants in Leicestershire? */}
+            {/* 4. Why Choose Our Senior Healthcare Assistants? */}
             <section aria-labelledby="why-choose-senior-heading" className="space-y-3.5">
               <h2
                 id="why-choose-senior-heading"
                 className="text-xl sm:text-2xl font-bold tracking-tight text-[#17252B]"
               >
-                Why Choose Our Senior Healthcare Assistants in Leicestershire?
+                Why Choose Our Senior Healthcare Assistants?
               </h2>
               <p className="text-sm sm:text-base text-[#52656b] leading-relaxed">
-                Choosing trusted and experienced carers is essential when arranging domiciliary care in
-                Leicestershire. At Oadby Care, we are committed to maintaining high standards of care and
-                professionalism.
+                Selecting seasoned care professionals ensures your loved one receives consistent,
+                high-standard attention. At Oadby Care, our senior carers combine rigorous training with
+                authentic compassion and proactive communication.
               </p>
 
               <ul className="space-y-2 text-xs sm:text-sm text-[#17252B] font-medium pt-1">
@@ -225,30 +226,29 @@ export const SeniorHealthcareAssistantsPage: React.FC<SeniorHealthcareAssistants
               </h2>
               <div className="space-y-3 text-sm sm:text-base text-[#52656b] leading-relaxed">
                 <p>
-                  For individuals who require more structured and experienced support, our Senior
-                  Healthcare Assistants in Leicestershire ensure continuity of care and close attention to
-                  wellbeing. Remaining at home while receiving advanced care improves comfort,
-                  familiarity, and overall quality of life.
+                  For clients requiring structured, experienced care routines, our Senior Healthcare
+                  Assistants deliver dependable continuity and attentive oversight. Remaining in a
+                  cherished home environment sustains emotional security, dignity, and familiarity.
                 </p>
                 <p>
-                  Whether care is needed short-term or long-term, our Leicestershire care team is ready to
-                  provide expert support.
+                  Whether your family requires transitional support or a long-term care arrangement,
+                  our dedicated teams are ready to assist.
                 </p>
               </div>
             </section>
 
-            {/* 6. Arrange Senior Healthcare Support in Leicestershire */}
+            {/* 6. Arrange Senior Healthcare Support */}
             <section aria-labelledby="arrange-senior-heading" className="space-y-3">
               <h2
                 id="arrange-senior-heading"
                 className="text-xl sm:text-2xl font-bold tracking-tight text-[#17252B]"
               >
-                Arrange Senior Healthcare Support in Leicestershire
+                Arrange Senior Healthcare Support Today
               </h2>
               <p className="text-sm sm:text-base text-[#52656b] leading-relaxed">
-                If you are looking for experienced Senior Healthcare Assistants in Leicestershire, contact
-                Oadby Care today. We will discuss your needs, arrange a consultation, and develop a
-                personalised care plan designed around your situation.
+                If you are seeking experienced Senior Healthcare Assistants for your family, contact
+                Oadby Care today. We will discuss your needs in detail, arrange a consultation, and tailor
+                a care plan that provides the exact support needed.
               </p>
             </section>
           </div>

@@ -39,7 +39,7 @@ describe('AdvancedCarePage Component', () => {
     // Introduction heading
     expect(
       screen.getByRole('heading', {
-        name: /^Specialist Advanced Care Services at Home in Leicestershire$/i,
+        name: /^Specialist Advanced Care Services Delivered at Home$/i,
       }),
     ).toBeInTheDocument()
 
@@ -55,13 +55,13 @@ describe('AdvancedCarePage Component', () => {
     // Key Content Sections
     expect(screen.getByRole('heading', { name: /^What Is Advanced Care\?$/i })).toBeInTheDocument()
     expect(
-      screen.getByRole('heading', { name: /^Why Choose Our Advanced Care in Leicestershire\?$/i }),
+      screen.getByRole('heading', { name: /^Why Choose Our Advanced Care\?$/i }),
     ).toBeInTheDocument()
     expect(
       screen.getByRole('heading', { name: /^Supporting Complex Needs at Home$/i }),
     ).toBeInTheDocument()
     expect(
-      screen.getByRole('heading', { name: /^Arrange Advanced Care in Leicestershire$/i }),
+      screen.getByRole('heading', { name: /^Arrange Advanced Care Today$/i }),
     ).toBeInTheDocument()
   })
 

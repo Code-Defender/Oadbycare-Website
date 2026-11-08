@@ -13,7 +13,7 @@ describe('RegisteredNursesPage Component', () => {
       screen.getByRole('heading', { level: 1, name: /^Registered Nurses$/i }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText(/We focus on delivering high-quality Registered Nurses in Oadby & Leicestershire/i),
+      screen.getByText(/We focus on delivering high-quality Registered Nursing care across multiple locations throughout the UK/i),
     ).toBeInTheDocument()
 
     // Breadcrumb
@@ -39,18 +39,18 @@ describe('RegisteredNursesPage Component', () => {
     // Introduction heading
     expect(
       screen.getByRole('heading', {
-        name: /^Professional Registered Nurses Providing Care at Home in Leicestershire$/i,
+        name: /^Professional Registered Nurses Providing Care at Home$/i,
       }),
     ).toBeInTheDocument()
 
     // 7 Services Included List
     expect(screen.getByText('Medication administration and monitoring')).toBeInTheDocument()
-    expect(screen.getByText('Wound care and clinical support')).toBeInTheDocument()
-    expect(screen.getByText('Health assessments and monitoring')).toBeInTheDocument()
+    expect(screen.getByText('Wound care and clinical dressing support')).toBeInTheDocument()
+    expect(screen.getByText('Health assessments and vital monitoring')).toBeInTheDocument()
     expect(screen.getByText('Support for chronic medical conditions')).toBeInTheDocument()
     expect(screen.getByText('Post-hospital recovery care')).toBeInTheDocument()
     expect(screen.getByText('Coordination with healthcare professionals')).toBeInTheDocument()
-    expect(screen.getAllByText('Personalised nursing care plans').length).toBeGreaterThanOrEqual(1)
+    expect(screen.getAllByText('Personalised clinical nursing care plans').length).toBeGreaterThanOrEqual(1)
 
     // Key Content Sections
     expect(
@@ -58,7 +58,7 @@ describe('RegisteredNursesPage Component', () => {
     ).toBeInTheDocument()
     expect(
       screen.getByRole('heading', {
-        name: /^Why Choose Our Registered Nurses in Leicestershire\?$/i,
+        name: /^Why Choose Our Registered Nurses\?$/i,
       }),
     ).toBeInTheDocument()
     expect(
@@ -68,7 +68,7 @@ describe('RegisteredNursesPage Component', () => {
     ).toBeInTheDocument()
     expect(
       screen.getByRole('heading', {
-        name: /^Arrange Registered Nursing Care in Leicestershire$/i,
+        name: /^Arrange Registered Nursing Care Today$/i,
       }),
     ).toBeInTheDocument()
   })

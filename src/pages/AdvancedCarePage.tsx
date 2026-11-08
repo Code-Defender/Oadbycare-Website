@@ -24,7 +24,7 @@ const ADVANCED_SERVICES_LIST = [
 const WHY_CHOOSE_LIST = [
   'Experienced and trained carers',
   'Personalised care plans for complex needs',
-  'Flexible care arrangements across Leicestershire',
+  'Flexible care arrangements across Leicestershire and multiple UK locations',
   'Reliable and responsive local care team',
   'Compassionate and respectful approach',
 ] as const
@@ -95,7 +95,7 @@ export const AdvancedCarePage: React.FC<AdvancedCarePageProps> = ({ onNavigate }
                 Advanced Care
               </h1>
               <p className="text-xs sm:text-sm text-[#52656b] mt-1.5 leading-relaxed">
-                We focus on delivering high-quality Advanced Care service in Oadby &amp; Leicestershire
+                We focus on delivering high-quality Advanced Care services across multiple locations throughout the UK
               </p>
             </div>
           </div>
@@ -115,18 +115,18 @@ export const AdvancedCarePage: React.FC<AdvancedCarePageProps> = ({ onNavigate }
                 id="advanced-intro-heading"
                 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#17252B]"
               >
-                Specialist Advanced Care Services at Home in Leicestershire
+                Specialist Advanced Care Services Delivered at Home
               </h2>
               <div className="space-y-3.5 text-sm sm:text-base text-[#52656b] leading-relaxed">
                 <p>
-                  Oadby Care provides professional and compassionate Advanced Care in Leicestershire for
-                  individuals who require specialised support due to complex health conditions or higher
-                  care needs. Our trained carers deliver personalised home care services designed to
-                  ensure safety, comfort, and dignity while allowing clients to remain in their own homes.
+                  Oadby Care provides professional, compassionate Advanced Care for individuals managing
+                  complex conditions, advanced dementia, or higher-dependency health needs. Covering
+                  Leicestershire and multiple locations throughout the UK, our trained carers deliver
+                  structured care that preserves dignity, comfort, and personal safety.
                 </p>
                 <p>
-                  Our goal is to provide reliable home care in Leicestershire that supports individuals
-                  with more advanced care requirements while maintaining independence and quality of life.
+                  Our goal is to support clients with advanced care requirements so they can remain safely
+                  in familiar home surroundings while enjoying the highest possible quality of life.
                 </p>
               </div>
             </section>
@@ -137,7 +137,7 @@ export const AdvancedCarePage: React.FC<AdvancedCarePageProps> = ({ onNavigate }
                 id="advanced-services-heading"
                 className="text-xl sm:text-2xl font-bold tracking-tight text-[#17252B]"
               >
-                Our Advanced Care Services in Leicestershire Include:
+                Our Advanced Care Services Include:
               </h2>
 
               <div className="grid grid-cols-1 sm:grid-cols-12 gap-6 items-center pt-1">
@@ -177,31 +177,30 @@ export const AdvancedCarePage: React.FC<AdvancedCarePageProps> = ({ onNavigate }
               </h2>
               <div className="space-y-3 text-sm sm:text-base text-[#52656b] leading-relaxed">
                 <p>
-                  Advanced Care in Leicestershire is designed for individuals who require a higher level
-                  of support than standard domiciliary care. This may include people living with complex
-                  medical conditions, mobility limitations, or those who need ongoing supervision and
-                  assistance with daily activities.
+                  Advanced Care is designed for individuals whose care needs exceed standard domiciliary
+                  support. This includes those living with progressive neurological conditions, severe
+                  mobility restrictions, or health challenges requiring close supervision and
+                  specialised care techniques.
                 </p>
                 <p>
-                  Our experienced carers work closely with families and healthcare professionals to
-                  provide safe, structured, and effective complex care in Leicestershire tailored to each
-                  client’s needs.
+                  Our carers coordinate closely with families, general practitioners, and district medical
+                  professionals to ensure a continuous, structured, and proactive standard of care.
                 </p>
               </div>
             </section>
 
-            {/* 4. Why Choose Our Advanced Care in Leicestershire? */}
+            {/* 4. Why Choose Our Advanced Care? */}
             <section aria-labelledby="why-choose-advanced-heading" className="space-y-3.5">
               <h2
                 id="why-choose-advanced-heading"
                 className="text-xl sm:text-2xl font-bold tracking-tight text-[#17252B]"
               >
-                Why Choose Our Advanced Care in Leicestershire?
+                Why Choose Our Advanced Care?
               </h2>
               <p className="text-sm sm:text-base text-[#52656b] leading-relaxed">
-                Finding the right provider for specialist home care in Leicestershire is essential when
-                dealing with complex care needs. At Oadby Care, we are committed to delivering
-                professional and compassionate support.
+                When addressing higher-level care requirements, choosing an experienced and
+                compassionate care partner is paramount. At Oadby Care, we combine attentive personal
+                care with clinical awareness to support both clients and their families.
               </p>
 
               <ul className="space-y-2 text-xs sm:text-sm text-[#17252B] font-medium pt-1">
@@ -216,8 +215,8 @@ export const AdvancedCarePage: React.FC<AdvancedCarePageProps> = ({ onNavigate }
               </ul>
 
               <p className="text-sm sm:text-base text-[#52656b] leading-relaxed pt-1.5">
-                Our focus is to provide trusted professional care at home in Leicestershire that families
-                can rely on.
+                Our commitment is to provide trusted, professional home care that families across the UK
+                can rely on with confidence.
               </p>
             </section>
 
@@ -230,25 +229,24 @@ export const AdvancedCarePage: React.FC<AdvancedCarePageProps> = ({ onNavigate }
                 Supporting Complex Needs at Home
               </h2>
               <p className="text-sm sm:text-base text-[#52656b] leading-relaxed">
-                Remaining at home while receiving Advanced Care in Leicestershire allows individuals to
-                stay in a familiar and comfortable environment. Our carers ensure that every client
-                receives attentive support, helping them maintain independence while receiving the
-                specialised care they need.
+                Remaining at home provides invaluable emotional comfort and consistency during complex
+                health journeys. Our attentive carers adapt to changing needs, empowering clients to
+                maintain their independence within a safe and supportive home setting.
               </p>
             </section>
 
-            {/* 6. Arrange Advanced Care in Leicestershire */}
+            {/* 6. Arrange Advanced Care */}
             <section aria-labelledby="arrange-advanced-heading" className="space-y-3">
               <h2
                 id="arrange-advanced-heading"
                 className="text-xl sm:text-2xl font-bold tracking-tight text-[#17252B]"
               >
-                Arrange Advanced Care in Leicestershire
+                Arrange Advanced Care Today
               </h2>
               <p className="text-sm sm:text-base text-[#52656b] leading-relaxed">
-                If you or your loved one requires professional Advanced Care in Leicestershire, contact
-                Oadby Care today. Our friendly team will discuss your needs and create a personalised
-                care plan tailored to provide the right level of support.
+                If you or a loved one requires specialised advanced care at home, get in touch with
+                Oadby Care today. Our care team will carry out a thorough assessment to design a
+                bespoke care plan tailored to your exact requirements.
               </p>
             </section>
           </div>

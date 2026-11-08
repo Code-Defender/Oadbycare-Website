@@ -30,25 +30,25 @@ describe('ServicesPage Component', () => {
     // 1. Specialized Care
     expect(screen.getByRole('heading', { name: /^Specialized Care$/i })).toBeInTheDocument()
     expect(
-      screen.getByText(/Specialized Care in Oadby and Leicestershire is designed for individuals/i),
+      screen.getByText(/Condition-specific care designed for individuals with complex medical needs/i),
     ).toBeInTheDocument()
 
     // 2. Support Workers
     expect(screen.getByRole('heading', { name: /^Support Workers$/i })).toBeInTheDocument()
     expect(
-      screen.getByText(/Our focus is to deliver dependable home care across Leicestershire/i),
+      screen.getByText(/Dependable, person-centred assistance with daily routines/i),
     ).toBeInTheDocument()
 
     // 3. Advanced Care
     expect(screen.getByRole('heading', { name: /^Advanced Care$/i })).toBeInTheDocument()
     expect(
-      screen.getByText(/We provide professional and compassionate Advanced Care in Oadby/i),
+      screen.getByText(/Dedicated, higher-level home support for individuals living with dementia/i),
     ).toBeInTheDocument()
 
     // 4. Registered Nurses
     expect(screen.getByRole('heading', { name: /^Registered Nurses$/i })).toBeInTheDocument()
     expect(
-      screen.getByText(/Our goal is to provide reliable nursing care at home in Leicestershire/i),
+      screen.getByText(/Qualified clinical nursing delivered directly at home/i),
     ).toBeInTheDocument()
 
     // 5. Senior Healthcare Assistants
@@ -56,13 +56,13 @@ describe('ServicesPage Component', () => {
       screen.getByRole('heading', { name: /^Senior Healthcare Assistants$/i }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText(/Oadby Care provides professional and compassionate Senior Healthcare Assistants/i),
+      screen.getByText(/Experienced senior carers providing elevated care supervision/i),
     ).toBeInTheDocument()
 
     // 6. Healthcare Assistance
     expect(screen.getByRole('heading', { name: /^Healthcare Assistance$/i })).toBeInTheDocument()
     expect(
-      screen.getByText(/Our professional carers support elderly clients and adults with disabilities/i),
+      screen.getByText(/Flexible, dignified domiciliary assistance helping elderly individuals/i),
     ).toBeInTheDocument()
 
     // Images rendered

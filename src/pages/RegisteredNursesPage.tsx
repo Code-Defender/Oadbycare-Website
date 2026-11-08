@@ -13,19 +13,19 @@ export interface RegisteredNursesPageProps {
 
 const NURSING_SERVICES_LIST = [
   'Medication administration and monitoring',
-  'Wound care and clinical support',
-  'Health assessments and monitoring',
+  'Wound care and clinical dressing support',
+  'Health assessments and vital monitoring',
   'Support for chronic medical conditions',
   'Post-hospital recovery care',
   'Coordination with healthcare professionals',
-  'Personalised nursing care plans',
+  'Personalised clinical nursing care plans',
 ] as const
 
 const WHY_CHOOSE_LIST = [
   'Fully qualified and experienced registered nurses',
   'Professional medical care delivered at home',
-  'Personalised nursing care plans',
-  'Reliable and responsive care across Leicestershire',
+  'Personalised clinical nursing care plans',
+  'Reliable and responsive care across Leicestershire and multiple UK locations',
   'Compassionate and patient-focused service',
 ] as const
 
@@ -95,7 +95,7 @@ export const RegisteredNursesPage: React.FC<RegisteredNursesPageProps> = ({ onNa
                 Registered Nurses
               </h1>
               <p className="text-xs sm:text-sm text-[#52656b] mt-1.5 leading-relaxed">
-                We focus on delivering high-quality Registered Nurses in Oadby &amp; Leicestershire
+                We focus on delivering high-quality Registered Nursing care across multiple locations throughout the UK
               </p>
             </div>
           </div>
@@ -115,19 +115,19 @@ export const RegisteredNursesPage: React.FC<RegisteredNursesPageProps> = ({ onNa
                 id="nurses-intro-heading"
                 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#17252B]"
               >
-                Professional Registered Nurses Providing Care at Home in Leicestershire
+                Professional Registered Nurses Providing Care at Home
               </h2>
               <div className="space-y-3.5 text-sm sm:text-base text-[#52656b] leading-relaxed">
                 <p>
-                  Oadby Care offers experienced and compassionate Registered Nurses in Leicestershire,
-                  delivering professional nursing care within the comfort of your own home. Our qualified
-                  nurses support individuals with complex medical needs, long-term conditions, and recovery
-                  after illness or hospital discharge.
+                  Oadby Care provides experienced and compassionate Registered Nurses to deliver expert
+                  clinical care directly in your home. Serving Leicestershire and locations throughout
+                  the UK, our qualified nurses support individuals with acute medical needs, chronic
+                  conditions, and rehabilitation following hospital discharge.
                 </p>
                 <p>
-                  Our goal is to provide reliable nursing care at home in Leicestershire so clients can
-                  receive professional healthcare support while remaining in a familiar and comfortable
-                  environment.
+                  Our mission is to make clinical care accessible, reliable, and comfortable at home,
+                  ensuring clients receive high standards of nursing care without unnecessary hospital
+                  stays.
                 </p>
               </div>
             </section>
@@ -138,7 +138,7 @@ export const RegisteredNursesPage: React.FC<RegisteredNursesPageProps> = ({ onNa
                 id="nursing-services-heading"
                 className="text-xl sm:text-2xl font-bold tracking-tight text-[#17252B]"
               >
-                Our Registered Nursing Services in Leicestershire Include:
+                Our Registered Nursing Services Include:
               </h2>
 
               <div className="grid grid-cols-1 sm:grid-cols-12 gap-6 items-center pt-1">
@@ -178,30 +178,30 @@ export const RegisteredNursesPage: React.FC<RegisteredNursesPageProps> = ({ onNa
               </h2>
               <div className="space-y-3 text-sm sm:text-base text-[#52656b] leading-relaxed">
                 <p>
-                  Our Registered Nurses in Leicestershire provide advanced medical care and supervision
-                  for individuals who require professional healthcare support at home. They work closely
-                  with families, doctors, and care teams to ensure every client receives safe,
-                  personalised, and effective care.
+                  Our Registered Nurses manage clinical procedures, medication protocols, and patient
+                  wellbeing for individuals requiring skilled medical care outside a hospital setting.
+                  Working in close partnership with doctors, consultants, and families, they ensure care
+                  is administered safely and effectively.
                 </p>
                 <p>
-                  This service is ideal for individuals who require ongoing medical monitoring,
-                  specialised care, or post-hospital recovery support.
+                  This service is ideal for those managing complex conditions, recovering from surgery,
+                  or requiring continuous clinical monitoring in the comfort of home.
                 </p>
               </div>
             </section>
 
-            {/* 4. Why Choose Our Registered Nurses in Leicestershire? */}
+            {/* 4. Why Choose Our Registered Nurses? */}
             <section aria-labelledby="why-choose-nurses-heading" className="space-y-3.5">
               <h2
                 id="why-choose-nurses-heading"
                 className="text-xl sm:text-2xl font-bold tracking-tight text-[#17252B]"
               >
-                Why Choose Our Registered Nurses in Leicestershire?
+                Why Choose Our Registered Nurses?
               </h2>
               <p className="text-sm sm:text-base text-[#52656b] leading-relaxed">
-                Finding reliable nursing care at home in Leicestershire is essential for families
-                seeking professional medical support. At Oadby Care, we ensure every nurse is fully
-                qualified and committed to delivering exceptional care.
+                Arranging clinical nursing at home requires complete trust in the skill and empathy of
+                your care team. At Oadby Care, every nurse is fully registered, vetted, and committed to
+                patient-centred excellence.
               </p>
 
               <ul className="space-y-2 text-xs sm:text-sm text-[#17252B] font-medium pt-1">
@@ -216,8 +216,8 @@ export const RegisteredNursesPage: React.FC<RegisteredNursesPageProps> = ({ onNa
               </ul>
 
               <p className="text-sm sm:text-base text-[#52656b] leading-relaxed pt-1.5">
-                Our aim is to provide trusted professional nursing support in Leicestershire that
-                ensures safety, comfort, and peace of mind.
+                Our aim is to provide trusted clinical nursing support that delivers medical excellence,
+                patient safety, and genuine peace of mind.
               </p>
             </section>
 
@@ -230,25 +230,24 @@ export const RegisteredNursesPage: React.FC<RegisteredNursesPageProps> = ({ onNa
                 Quality Nursing Care in the Comfort of Home
               </h2>
               <p className="text-sm sm:text-base text-[#52656b] leading-relaxed">
-                Receiving care from Registered Nurses in Leicestershire allows individuals to remain in
-                their homes while receiving the medical support they need. Our nursing team ensures every
-                client receives safe, attentive, and personalised care that supports both physical health
-                and emotional wellbeing.
+                Home-based nursing care preserves client dignity and emotional comfort while ensuring
+                rigorous medical oversight. Our registered nurses treat the whole person, fostering
+                recovery, stability, and reassurance for the entire family.
               </p>
             </section>
 
-            {/* 6. Arrange Registered Nursing Care in Leicestershire */}
+            {/* 6. Arrange Registered Nursing Care */}
             <section aria-labelledby="arrange-nurses-heading" className="space-y-3">
               <h2
                 id="arrange-nurses-heading"
                 className="text-xl sm:text-2xl font-bold tracking-tight text-[#17252B]"
               >
-                Arrange Registered Nursing Care in Leicestershire
+                Arrange Registered Nursing Care Today
               </h2>
               <p className="text-sm sm:text-base text-[#52656b] leading-relaxed">
-                If you or your loved one requires professional nursing care at home in Leicestershire,
-                contact Oadby Care today. Our team will discuss your needs and create a tailored care
-                plan designed to provide the right level of support.
+                If you or a loved one requires qualified nursing care at home, contact Oadby Care today.
+                Our clinical coordination team is ready to discuss your medical needs and organise an
+                immediate consultation.
               </p>
             </section>
           </div>

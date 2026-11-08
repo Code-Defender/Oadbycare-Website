@@ -23,7 +23,7 @@ const SERVICES_LIST: readonly ServiceCardItem[] = [
     title: 'Specialized Care',
     tag: 'Personalised Support',
     teaser:
-      'Specialized Care in Oadby and Leicestershire is designed for individuals who require dedicated, condition-specific support for physical, mobility, or complex medical needs ...',
+      'Condition-specific care designed for individuals with complex medical needs and disabilities, delivered in the comfort of home across multiple locations throughout the UK.',
     imageSrc: '/services/specialized-care.jpg',
     imageAlt: 'Elderly client receiving specialized care support in a comfortable home',
   },
@@ -32,7 +32,7 @@ const SERVICES_LIST: readonly ServiceCardItem[] = [
     title: 'Support Workers',
     tag: 'Daily Independence',
     teaser:
-      'Our focus is to deliver dependable home care across Leicestershire that improves daily wellbeing, offers warm companionship, and assists with ...',
+      'Dependable, person-centred assistance with daily routines, personal care, and uplifting companionship to foster independence in homes across the UK.',
     imageSrc: '/services/support-workers.jpg',
     imageAlt: 'Support worker sharing a warm conversation with an elderly lady over tea',
   },
@@ -41,7 +41,7 @@ const SERVICES_LIST: readonly ServiceCardItem[] = [
     title: 'Advanced Care',
     tag: 'Complex & Dementia',
     teaser:
-      'We provide professional and compassionate Advanced Care in Oadby for individuals living with dementia, Alzheimer’s, or complex health conditions requiring ...',
+      'Dedicated, higher-level home support for individuals living with dementia, Alzheimer’s, or advanced medical conditions requiring tailored, continuous care.',
     imageSrc: '/services/advanced-care.jpg',
     imageAlt: 'Advanced home care specialist providing attentive dementia support',
   },
@@ -50,7 +50,7 @@ const SERVICES_LIST: readonly ServiceCardItem[] = [
     title: 'Registered Nurses',
     tag: 'Clinical Nursing',
     teaser:
-      'Our goal is to provide reliable nursing care at home in Leicestershire so clients receive expert clinical oversight, medication management, and ...',
+      'Qualified clinical nursing delivered directly at home, providing expert medical oversight, medication administration, and compassionate recovery care across the UK.',
     imageSrc: '/services/registered-nurses.jpg',
     imageAlt: 'Registered clinical community nurse reviewing medical notes with client',
   },
@@ -59,7 +59,7 @@ const SERVICES_LIST: readonly ServiceCardItem[] = [
     title: 'Senior Healthcare Assistants',
     tag: 'Experienced Supervision',
     teaser:
-      'Oadby Care provides professional and compassionate Senior Healthcare Assistants who bring elevated clinical expertise, careful assessments, and ...',
+      'Experienced senior carers providing elevated care supervision, complex support, and dependable daily living assistance tailored to individual family needs.',
     imageSrc: '/services/senior-healthcare-assistants.jpg',
     imageAlt: 'Senior healthcare assistant reviewing care routines and checking client comfort',
   },
@@ -68,7 +68,7 @@ const SERVICES_LIST: readonly ServiceCardItem[] = [
     title: 'Healthcare Assistance',
     tag: 'Personal & Practical Care',
     teaser:
-      'Our professional carers support elderly clients and adults with disabilities with respectful personal care, medication reminders, meal preparation, and ...',
+      'Flexible, dignified domiciliary assistance helping elderly individuals and adults with disabilities manage everyday routines, nutrition, and personal wellbeing.',
     imageSrc: '/services/healthcare-assistance.jpg',
     imageAlt: 'Compassionate carer assisting an elderly client in a comfortable home',
   },
@@ -155,9 +155,9 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate, onSelect
             Professional &amp; Compassionate Care Services
           </h1>
           <p className="text-base sm:text-lg text-[#52656b] leading-relaxed">
-            Delivering dependable, personalised home care and clinical support across Oadby and
-            Leicestershire, helping individuals live safely, comfortably, and independently in their
-            own homes.
+            Delivering dependable, personalised home care and clinical support across Leicestershire
+            and multiple locations throughout the UK, helping individuals live safely, comfortably,
+            and independently in their own homes.
           </p>
         </div>
       </section>
@@ -245,8 +245,8 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate, onSelect
             Not sure which care service fits your needs?
           </h2>
           <p className="text-xs sm:text-sm text-[#52656b] leading-relaxed">
-            Our local care coordinators in Oadby are available 7 days a week to answer questions and
-            conduct a free, no-obligation care review.
+            Our dedicated care coordinators are available 7 days a week to answer questions and
+            arrange a free, no-obligation care review across our UK service areas.
           </p>
         </div>
 

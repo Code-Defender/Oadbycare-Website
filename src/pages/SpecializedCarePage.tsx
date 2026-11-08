@@ -24,7 +24,7 @@ const SERVICES_INCLUDE_LIST = [
 const WHY_CHOOSE_LIST = [
   'Trained carers experienced in specialist care',
   'Personalised care plans for complex conditions',
-  'Flexible home care services across Leicestershire',
+  'Flexible care services across Leicestershire and multiple UK locations',
   'Reliable and responsive local care team',
   'Compassionate and respectful support',
 ] as const
@@ -95,7 +95,7 @@ export const SpecializedCarePage: React.FC<SpecializedCarePageProps> = ({ onNavi
                 Specialized Care
               </h1>
               <p className="text-xs sm:text-sm text-[#52656b] mt-1.5 leading-relaxed">
-                We focus on delivering high-quality Specialized Care service in Oadby &amp; Leicestershire
+                We focus on delivering high-quality Specialized Care across multiple locations throughout the UK
               </p>
             </div>
           </div>
@@ -115,19 +115,19 @@ export const SpecializedCarePage: React.FC<SpecializedCarePageProps> = ({ onNavi
                 id="expert-services-heading"
                 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#17252B]"
               >
-                Expert Specialized Care Services at Home in Leicestershire
+                Expert Specialized Care Services Delivered in the Comfort of Home
               </h2>
               <div className="space-y-3.5 text-sm sm:text-base text-[#52656b] leading-relaxed">
                 <p>
-                  Oadby Care provides professional and compassionate Specialized Care in Leicestershire
-                  for individuals with complex or specific health conditions. Our experienced carers
-                  deliver personalised care at home designed to meet the unique needs of each client
-                  while promoting dignity, comfort, and independence.
+                  Oadby Care delivers professional and compassionate Specialized Care for individuals
+                  living with complex or specific health conditions. Serving Leicestershire and
+                  communities across the UK, our experienced carers provide tailored support that
+                  champions each client's dignity, comfort, and personal independence.
                 </p>
                 <p>
-                  We understand that some individuals require more specialised support than standard home
-                  care. Our specialist home care in Leicestershire ensures that clients receive the
-                  appropriate level of care while remaining in the familiar environment of their own home.
+                  When health requirements go beyond standard home care, our specialist teams ensure
+                  clients receive targeted, condition-specific support within the familiar,
+                  reassuring surroundings of their own home.
                 </p>
               </div>
             </section>
@@ -138,7 +138,7 @@ export const SpecializedCarePage: React.FC<SpecializedCarePageProps> = ({ onNavi
                 id="services-include-heading"
                 className="text-xl sm:text-2xl font-bold tracking-tight text-[#17252B]"
               >
-                Our Specialized Care Services in Leicestershire Include:
+                Our Specialized Care Services Include:
               </h2>
 
               <div className="grid grid-cols-1 sm:grid-cols-12 gap-6 items-center pt-1">
@@ -176,14 +176,15 @@ export const SpecializedCarePage: React.FC<SpecializedCarePageProps> = ({ onNavi
               </h2>
               <div className="space-y-3 text-sm sm:text-base text-[#52656b] leading-relaxed">
                 <p>
-                  Specialized Care in Leicestershire is designed for individuals who require targeted
-                  support due to medical conditions, disabilities, or long-term health challenges. Our
-                  trained carers provide structured care that focuses on safety, wellbeing, and
-                  maintaining quality of life.
+                  Specialized Care is tailored support for individuals navigating medical conditions,
+                  disabilities, or progressive health challenges. Our trained carers provide
+                  structured, compassionate assistance centered on client safety, clinical wellbeing,
+                  and everyday quality of life.
                 </p>
                 <p>
-                  This type of complex care in Leicestershire is tailored to each individual’s condition
-                  and may involve coordination with healthcare professionals and family members.
+                  This higher level of home care is precisely calibrated to each individual’s
+                  circumstances, seamlessly coordinating with family members, GPs, and multidisciplinary
+                  healthcare teams.
                 </p>
               </div>
             </section>
@@ -194,12 +195,12 @@ export const SpecializedCarePage: React.FC<SpecializedCarePageProps> = ({ onNavi
                 id="why-choose-heading"
                 className="text-xl sm:text-2xl font-bold tracking-tight text-[#17252B]"
               >
-                Why Choose Our Specialized Care in Leicestershire?
+                Why Choose Our Specialized Care?
               </h2>
               <p className="text-sm sm:text-base text-[#52656b] leading-relaxed">
-                When dealing with complex health conditions, choosing the right provider for specialist
-                home care in Leicestershire is essential. At Oadby Care, we are committed to delivering
-                high-quality, compassionate care tailored to each client’s needs.
+                Selecting the right provider for complex health conditions is an important decision.
+                At Oadby Care, we are committed to delivering dependable, high-quality care that puts
+                each client and their family at the center of every care plan.
               </p>
 
               <ul className="space-y-2 text-xs sm:text-sm text-[#17252B] font-medium pt-1">
@@ -214,8 +215,8 @@ export const SpecializedCarePage: React.FC<SpecializedCarePageProps> = ({ onNavi
               </ul>
 
               <p className="text-sm sm:text-base text-[#52656b] leading-relaxed pt-1.5">
-                Our goal is to provide trusted home care in Leicestershire that ensures comfort,
-                safety, and peace of mind for clients and their families.
+                Our goal is to provide trusted home care that ensures safety, comfort, and enduring
+                peace of mind for clients and their families across the UK.
               </p>
             </section>
 
@@ -228,25 +229,24 @@ export const SpecializedCarePage: React.FC<SpecializedCarePageProps> = ({ onNavi
                 Specialist Support in the Comfort of Home
               </h2>
               <p className="text-sm sm:text-base text-[#52656b] leading-relaxed">
-                Receiving Specialized Care in Leicestershire allows individuals to stay in a familiar
-                environment while receiving professional support tailored to their condition. Our care
-                team focuses on improving wellbeing, maintaining independence, and ensuring every
-                client receives attentive and respectful care.
+                Receiving specialist care at home allows individuals to maintain their personal routines
+                and comfort while benefiting from dedicated professional care. Our care team focuses on
+                holistic wellbeing, helping clients live as independently and comfortably as possible.
               </p>
             </section>
 
-            {/* 6. Arrange Specialized Care in Leicestershire */}
+            {/* 6. Arrange Specialized Care */}
             <section aria-labelledby="arrange-care-heading" className="space-y-3">
               <h2
                 id="arrange-care-heading"
                 className="text-xl sm:text-2xl font-bold tracking-tight text-[#17252B]"
               >
-                Arrange Specialized Care in Leicestershire
+                Arrange Specialized Care Today
               </h2>
               <p className="text-sm sm:text-base text-[#52656b] leading-relaxed">
-                If you or your loved one requires professional Specialized Care in Leicestershire,
-                contact Oadby Care today. Our friendly team will discuss your needs and create a
-                personalised care plan designed to provide the right level of specialist support.
+                If you or a loved one requires dedicated specialist care, contact Oadby Care today. Our
+                friendly team will listen carefully to your requirements, answer your questions, and
+                develop a personalised care plan tailored to your needs.
               </p>
             </section>
           </div>

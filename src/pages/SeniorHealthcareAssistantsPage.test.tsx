@@ -13,7 +13,7 @@ describe('SeniorHealthcareAssistantsPage Component', () => {
       screen.getByRole('heading', { level: 1, name: /^Senior Healthcare Assistants$/i }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText(/We focus on delivering high-quality Senior Healthcare Assistants in Oadby & Leicestershire/i),
+      screen.getByText(/We focus on delivering high-quality Senior Healthcare Assistants across multiple locations throughout the UK/i),
     ).toBeInTheDocument()
 
     // Breadcrumb
@@ -39,7 +39,7 @@ describe('SeniorHealthcareAssistantsPage Component', () => {
     // Introduction heading
     expect(
       screen.getByRole('heading', {
-        name: /^Experienced Senior Healthcare Assistants Supporting Families Across Leicestershire$/i,
+        name: /^Experienced Senior Healthcare Assistants Supporting Families Across the UK$/i,
       }),
     ).toBeInTheDocument()
 
@@ -57,7 +57,7 @@ describe('SeniorHealthcareAssistantsPage Component', () => {
     ).toBeInTheDocument()
     expect(
       screen.getByRole('heading', {
-        name: /^Why Choose Our Senior Healthcare Assistants in Leicestershire\?$/i,
+        name: /^Why Choose Our Senior Healthcare Assistants\?$/i,
       }),
     ).toBeInTheDocument()
     expect(
@@ -67,7 +67,7 @@ describe('SeniorHealthcareAssistantsPage Component', () => {
     ).toBeInTheDocument()
     expect(
       screen.getByRole('heading', {
-        name: /^Arrange Senior Healthcare Support in Leicestershire$/i,
+        name: /^Arrange Senior Healthcare Support Today$/i,
       }),
     ).toBeInTheDocument()
   })

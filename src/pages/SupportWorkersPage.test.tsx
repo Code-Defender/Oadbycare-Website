@@ -39,7 +39,7 @@ describe('SupportWorkersPage Component', () => {
     // Introduction heading
     expect(
       screen.getByRole('heading', {
-        name: /^Professional Support Workers Providing Care at Home in Leicestershire$/i,
+        name: /^Professional Support Workers Providing Care at Home$/i,
       }),
     ).toBeInTheDocument()
 
@@ -55,13 +55,13 @@ describe('SupportWorkersPage Component', () => {
     // Key Content Sections
     expect(screen.getByRole('heading', { name: /^What Do Support Workers Do\?$/i })).toBeInTheDocument()
     expect(
-      screen.getByRole('heading', { name: /^Why Choose Our Support Workers in Leicestershire\?$/i }),
+      screen.getByRole('heading', { name: /^Why Choose Our Support Workers\?$/i }),
     ).toBeInTheDocument()
     expect(
       screen.getByRole('heading', { name: /^Helping Individuals Live Independently$/i }),
     ).toBeInTheDocument()
     expect(
-      screen.getByRole('heading', { name: /^Arrange Support Worker Services in Leicestershire$/i }),
+      screen.getByRole('heading', { name: /^Arrange Support Worker Services Today$/i }),
     ).toBeInTheDocument()
   })
 

@@ -94,9 +94,9 @@ describe('App Root Integration', () => {
       screen.getByRole('heading', { level: 1, name: /^Specialized Care$/i }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText(/We focus on delivering high-quality Specialized Care service/i),
+      screen.getByText(/We focus on delivering high-quality Specialized Care across multiple locations throughout the UK/i),
     ).toBeInTheDocument()
-    expect(screen.getByText(/Our Specialized Care Services in Leicestershire Include/i)).toBeInTheDocument()
+    expect(screen.getByText(/Our Specialized Care Services Include/i)).toBeInTheDocument()
   })
 
   it('navigates to Support Workers page when clicking Support Workers card in Services page', () => {
@@ -114,9 +114,9 @@ describe('App Root Integration', () => {
       screen.getByRole('heading', { level: 1, name: /^Support Workers$/i }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText(/We focus on delivering high-quality Support Worker services in Oadby & Leicestershire/i),
+      screen.getByText(/We focus on delivering high-quality Support Worker services across multiple locations throughout the UK/i),
     ).toBeInTheDocument()
-    expect(screen.getByText(/Our Support Worker Services in Leicestershire Include/i)).toBeInTheDocument()
+    expect(screen.getByText(/Our Support Worker Services Include/i)).toBeInTheDocument()
   })
 
   it('navigates to Advanced Care page when clicking Advanced Care card in Services page', () => {
@@ -134,9 +134,9 @@ describe('App Root Integration', () => {
       screen.getByRole('heading', { level: 1, name: /^Advanced Care$/i }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText(/We focus on delivering high-quality Advanced Care service in Oadby & Leicestershire/i),
+      screen.getByText(/We focus on delivering high-quality Advanced Care services across multiple locations throughout the UK/i),
     ).toBeInTheDocument()
-    expect(screen.getByText(/Our Advanced Care Services in Leicestershire Include/i)).toBeInTheDocument()
+    expect(screen.getByText(/Our Advanced Care Services Include/i)).toBeInTheDocument()
   })
 
   it('navigates to Registered Nurses page when clicking Registered Nurses card in Services page', () => {
@@ -154,9 +154,9 @@ describe('App Root Integration', () => {
       screen.getByRole('heading', { level: 1, name: /^Registered Nurses$/i }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText(/We focus on delivering high-quality Registered Nurses in Oadby & Leicestershire/i),
+      screen.getByText(/We focus on delivering high-quality Registered Nursing care across multiple locations throughout the UK/i),
     ).toBeInTheDocument()
-    expect(screen.getByText(/Our Registered Nursing Services in Leicestershire Include/i)).toBeInTheDocument()
+    expect(screen.getByText(/Our Registered Nursing Services Include/i)).toBeInTheDocument()
   })
 
   it('navigates to Senior Healthcare Assistants page when clicking Senior Healthcare Assistants card in Services page', () => {
@@ -174,7 +174,7 @@ describe('App Root Integration', () => {
       screen.getByRole('heading', { level: 1, name: /^Senior Healthcare Assistants$/i }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText(/We focus on delivering high-quality Senior Healthcare Assistants in Oadby & Leicestershire/i),
+      screen.getByText(/We focus on delivering high-quality Senior Healthcare Assistants across multiple locations throughout the UK/i),
     ).toBeInTheDocument()
     expect(screen.getByText(/Our Senior Healthcare Assistant Services Include/i)).toBeInTheDocument()
   })
@@ -194,9 +194,9 @@ describe('App Root Integration', () => {
       screen.getByRole('heading', { level: 1, name: /^Healthcare Assistance$/i }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText(/Oadby Care provides trusted and compassionate Healthcare Assistance in Oadby & Leicestershire/i),
+      screen.getByText(/We focus on delivering high-quality Healthcare Assistance across multiple locations throughout the UK/i),
     ).toBeInTheDocument()
-    expect(screen.getByText(/Our Healthcare Assistance Services in Leicestershire Include/i)).toBeInTheDocument()
+    expect(screen.getByText(/Our Healthcare Assistance Services Include/i)).toBeInTheDocument()
   })
 
   it('navigates to FAQ page when F.A.Q link is clicked in Navbar', () => {

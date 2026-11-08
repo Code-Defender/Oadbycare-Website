@@ -13,7 +13,7 @@ describe('HealthcareAssistancePage Component', () => {
       screen.getByRole('heading', { level: 1, name: /^Healthcare Assistance$/i }),
     ).toBeInTheDocument()
     expect(
-      screen.getByText(/Oadby Care provides trusted and compassionate Healthcare Assistance in Oadby & Leicestershire/i),
+      screen.getByText(/We focus on delivering high-quality Healthcare Assistance across multiple locations throughout the UK/i),
     ).toBeInTheDocument()
 
     // Breadcrumb
@@ -39,7 +39,7 @@ describe('HealthcareAssistancePage Component', () => {
     // Introduction heading
     expect(
       screen.getByRole('heading', {
-        name: /^Professional Healthcare Assistance at Home in Leicestershire$/i,
+        name: /^Professional Healthcare Assistance at Home$/i,
       }),
     ).toBeInTheDocument()
 
@@ -57,7 +57,7 @@ describe('HealthcareAssistancePage Component', () => {
     ).toBeInTheDocument()
     expect(
       screen.getByRole('heading', {
-        name: /^Why Choose Our Healthcare Assistance in Leicestershire\?$/i,
+        name: /^Why Choose Our Healthcare Assistance\?$/i,
       }),
     ).toBeInTheDocument()
     expect(
@@ -67,7 +67,7 @@ describe('HealthcareAssistancePage Component', () => {
     ).toBeInTheDocument()
     expect(
       screen.getByRole('heading', {
-        name: /^Get Started with Healthcare Assistance in Leicestershire$/i,
+        name: /^Get Started with Healthcare Assistance Today$/i,
       }),
     ).toBeInTheDocument()
   })

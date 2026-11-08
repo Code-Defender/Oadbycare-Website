@@ -24,7 +24,7 @@ const SUPPORT_SERVICES_LIST = [
 const WHY_CHOOSE_LIST = [
   'Trained and DBS-checked support workers',
   'Personalised care plans tailored to each client',
-  'Flexible support options across Leicestershire',
+  'Flexible support options across Leicestershire and multiple UK locations',
   'Reliable and responsive local care team',
   'Compassionate and respectful care approach',
 ] as const
@@ -95,7 +95,7 @@ export const SupportWorkersPage: React.FC<SupportWorkersPageProps> = ({ onNaviga
                 Support Workers
               </h1>
               <p className="text-xs sm:text-sm text-[#52656b] mt-1.5 leading-relaxed">
-                We focus on delivering high-quality Support Worker services in Oadby &amp; Leicestershire
+                We focus on delivering high-quality Support Worker services across multiple locations throughout the UK
               </p>
             </div>
           </div>
@@ -115,18 +115,18 @@ export const SupportWorkersPage: React.FC<SupportWorkersPageProps> = ({ onNaviga
                 id="support-intro-heading"
                 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#17252B]"
               >
-                Professional Support Workers Providing Care at Home in Leicestershire
+                Professional Support Workers Providing Care at Home
               </h2>
               <div className="space-y-3.5 text-sm sm:text-base text-[#52656b] leading-relaxed">
                 <p>
-                  Oadby Care offers compassionate and reliable Support Workers in Leicestershire,
-                  helping individuals live safely and independently in the comfort of their own homes.
-                  Our dedicated support workers assist elderly individuals, adults with disabilities,
-                  and people who require daily living support with personalised home care services.
+                  Oadby Care provides compassionate, dependable Support Workers to help individuals
+                  live safely and independently at home. Serving Leicestershire and locations throughout
+                  the UK, our support workers assist older adults, individuals with disabilities, and
+                  those needing everyday practical help.
                 </p>
                 <p>
-                  Our focus is to deliver dependable home care across Leicestershire that improves
-                  quality of life while ensuring dignity, safety, and independence.
+                  We focus on delivering consistent, person-centred care that protects dignity, builds
+                  confidence, and enriches everyday life.
                 </p>
               </div>
             </section>
@@ -137,7 +137,7 @@ export const SupportWorkersPage: React.FC<SupportWorkersPageProps> = ({ onNaviga
                 id="support-services-heading"
                 className="text-xl sm:text-2xl font-bold tracking-tight text-[#17252B]"
               >
-                Our Support Worker Services in Leicestershire Include:
+                Our Support Worker Services Include:
               </h2>
 
               <div className="grid grid-cols-1 sm:grid-cols-12 gap-6 items-center pt-1">
@@ -177,30 +177,30 @@ export const SupportWorkersPage: React.FC<SupportWorkersPageProps> = ({ onNaviga
               </h2>
               <div className="space-y-3 text-sm sm:text-base text-[#52656b] leading-relaxed">
                 <p>
-                  Our Support Workers in Leicestershire provide practical and emotional assistance to
-                  individuals who need help with everyday tasks and activities. This form of
-                  domiciliary care is designed to help clients maintain independence while receiving the
-                  support they need to manage daily life comfortably.
+                  Our Support Workers provide both practical help and reassuring companionship to
+                  individuals navigating everyday tasks. This form of home care empowers clients to
+                  remain self-reliant while having a trusted professional on hand for routines,
+                  mobility, and household support.
                 </p>
                 <p>
-                  Support workers play an important role in promoting wellbeing, companionship, and
-                  confidence for individuals who may need ongoing assistance.
+                  Beyond everyday tasks, our workers play an invaluable role in reducing isolation,
+                  fostering social connection, and providing peace of mind for families.
                 </p>
               </div>
             </section>
 
-            {/* 4. Why Choose Our Support Workers in Leicestershire? */}
+            {/* 4. Why Choose Our Support Workers? */}
             <section aria-labelledby="why-choose-support-heading" className="space-y-3.5">
               <h2
                 id="why-choose-support-heading"
                 className="text-xl sm:text-2xl font-bold tracking-tight text-[#17252B]"
               >
-                Why Choose Our Support Workers in Leicestershire?
+                Why Choose Our Support Workers?
               </h2>
               <p className="text-sm sm:text-base text-[#52656b] leading-relaxed">
-                Choosing the right provider for care support at home in Leicestershire is important for
-                both clients and families. At Oadby Care, we are committed to delivering reliable and
-                person-centred care services.
+                Finding trustworthy, compassionate support at home is vital for family peace of mind.
+                At Oadby Care, our focus is always on person-centred values, reliable communication,
+                and genuine continuity of care.
               </p>
 
               <ul className="space-y-2 text-xs sm:text-sm text-[#17252B] font-medium pt-1">
@@ -215,8 +215,8 @@ export const SupportWorkersPage: React.FC<SupportWorkersPageProps> = ({ onNaviga
               </ul>
 
               <p className="text-sm sm:text-base text-[#52656b] leading-relaxed pt-1.5">
-                Our aim is to provide trusted personal support services in Leicestershire that families
-                can depend on.
+                Our aim is to provide dependable care support that clients and families can rely on every
+                single day.
               </p>
             </section>
 
@@ -229,25 +229,24 @@ export const SupportWorkersPage: React.FC<SupportWorkersPageProps> = ({ onNaviga
                 Helping Individuals Live Independently
               </h2>
               <p className="text-sm sm:text-base text-[#52656b] leading-relaxed">
-                Our Support Workers in Leicestershire focus on helping clients maintain independence
-                while receiving the support they need. By providing practical assistance and
-                companionship, we help individuals continue living comfortably and confidently in their
-                own homes.
+                Every individual deserves to live comfortably in their own home for as long as possible.
+                By providing attentive assistance and uplifting companionship, our support workers help
+                clients sustain their lifestyle, routines, and community connections.
               </p>
             </section>
 
-            {/* 6. Arrange Support Worker Services in Leicestershire */}
+            {/* 6. Arrange Support Worker Services */}
             <section aria-labelledby="arrange-support-heading" className="space-y-3">
               <h2
                 id="arrange-support-heading"
                 className="text-xl sm:text-2xl font-bold tracking-tight text-[#17252B]"
               >
-                Arrange Support Worker Services in Leicestershire
+                Arrange Support Worker Services Today
               </h2>
               <p className="text-sm sm:text-base text-[#52656b] leading-relaxed">
-                If you or your loved one needs professional Support Workers in Leicestershire, contact
-                Oadby Care today. Our team will discuss your needs and create a personalised care plan
-                designed to provide the right level of support.
+                If you or a family member would benefit from reliable support at home, contact Oadby
+                Care today. We will arrange a friendly consultation and design a flexible support
+                schedule suited to your lifestyle.
               </p>
             </section>
           </div>

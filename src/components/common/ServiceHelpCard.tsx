@@ -17,7 +17,7 @@ export const ServiceHelpCard: React.FC<ServiceHelpCardProps> = ({
   imageSrc = '/services/support-workers.jpg',
   imageAlt = 'Oadby Care support worker having warm conversation over tea',
   title = 'Have Questions?',
-  subtitle = 'Our local client care coordinators in Oadby are available 7 days a week to answer your questions.',
+  subtitle = 'Our dedicated care team is available 7 days a week to answer your questions and assist families across the UK.',
   className = '',
 }) => {
   return (

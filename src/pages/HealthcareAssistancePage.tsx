@@ -24,7 +24,7 @@ const WHY_CHOOSE_LIST = [
   'Fully trained and DBS-checked carers',
   'Personalised care plans tailored to individual needs',
   'Flexible visit times – from short visits to longer support',
-  'Fast response across Leicestershire',
+  'Responsive local and regional care coverage across the UK',
   'Compassionate, respectful, and professional service',
 ] as const
 
@@ -94,7 +94,7 @@ export const HealthcareAssistancePage: React.FC<HealthcareAssistancePageProps> =
                 Healthcare Assistance
               </h1>
               <p className="text-xs sm:text-sm text-[#52656b] mt-1.5 leading-relaxed">
-                Oadby Care provides trusted and compassionate Healthcare Assistance in Oadby &amp; Leicestershire.
+                We focus on delivering high-quality Healthcare Assistance across multiple locations throughout the UK
               </p>
             </div>
           </div>
@@ -114,18 +114,19 @@ export const HealthcareAssistancePage: React.FC<HealthcareAssistancePageProps> =
                 id="healthcare-intro-heading"
                 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#17252B]"
               >
-                Professional Healthcare Assistance at Home in Leicestershire
+                Professional Healthcare Assistance at Home
               </h2>
               <div className="space-y-3.5 text-sm sm:text-base text-[#52656b] leading-relaxed">
                 <p>
-                  Our professional carers support elderly clients, adults with disabilities, and
-                  individuals recovering from illness with personalised home care services tailored to
-                  their specific needs.
+                  Oadby Care provides reliable, person-centred Healthcare Assistance to support older
+                  adults, individuals with disabilities, and those recuperating from illness. Covering
+                  Leicestershire and multiple locations throughout the UK, our carers help clients live
+                  safely and comfortably in their own homes.
                 </p>
                 <p>
-                  We understand that every client is different. That’s why our home care in Leicestershire
-                  is carefully designed to promote independence while ensuring safety, dignity, and
-                  wellbeing at all times.
+                  We recognize that no two care journeys are identical. That is why our home care is
+                  thoughtfully adapted to each person's lifestyle, fostering autonomy while ensuring total
+                  dignity, safety, and wellbeing.
                 </p>
               </div>
             </section>
@@ -136,7 +137,7 @@ export const HealthcareAssistancePage: React.FC<HealthcareAssistancePageProps> =
                 id="healthcare-services-heading"
                 className="text-xl sm:text-2xl font-bold tracking-tight text-[#17252B]"
               >
-                Our Healthcare Assistance Services in Leicestershire Include:
+                Our Healthcare Assistance Services Include:
               </h2>
 
               <div className="grid grid-cols-1 sm:grid-cols-12 gap-6 items-center pt-1">
@@ -176,31 +177,31 @@ export const HealthcareAssistancePage: React.FC<HealthcareAssistancePageProps> =
               </h2>
               <div className="space-y-3 text-sm sm:text-base text-[#52656b] leading-relaxed">
                 <p>
-                  Healthcare Assistance is a flexible form of care at home in Leicestershire that
-                  provides essential daily support for individuals who need help with routine activities
-                  or medical-related assistance. Our trained carers deliver dependable domiciliary care in
-                  Leicestershire, ensuring clients receive the right level of care without leaving their
-                  homes.
+                  Healthcare Assistance is a flexible, home-based service delivering essential daily
+                  support with personal care, nutrition, medication routines, and mobility. Our trained
+                  carers provide dependable domiciliary assistance that enables clients to thrive in their
+                  own homes rather than considering residential care.
                 </p>
                 <p>
-                  This service is ideal for elderly individuals, those with long-term conditions, or
-                  anyone requiring temporary support after hospital discharge.
+                  This service provides an ideal solution for older adults seeking support with daily
+                  routines, individuals managing ongoing health challenges, or those transitioning home
+                  following hospital care.
                 </p>
               </div>
             </section>
 
-            {/* 4. Why Choose Our Healthcare Assistance in Leicestershire? */}
+            {/* 4. Why Choose Our Healthcare Assistance? */}
             <section aria-labelledby="why-choose-healthcare-heading" className="space-y-3.5">
               <h2
                 id="why-choose-healthcare-heading"
                 className="text-xl sm:text-2xl font-bold tracking-tight text-[#17252B]"
               >
-                Why Choose Our Healthcare Assistance in Leicestershire?
+                Why Choose Our Healthcare Assistance?
               </h2>
               <p className="text-sm sm:text-base text-[#52656b] leading-relaxed">
-                Choosing the right provider for elderly care in Leicestershire is an important decision.
-                At Oadby Care, we focus exclusively on delivering high-quality homecare services across
-                Leicestershire.
+                Selecting a reliable care provider brings reassurance to both individuals and their
+                families. At Oadby Care, we prioritize compassionate matching, consistent visit times,
+                and transparent communication across all our service areas.
               </p>
 
               <ul className="space-y-2 text-xs sm:text-sm text-[#17252B] font-medium pt-1">
@@ -225,29 +226,29 @@ export const HealthcareAssistancePage: React.FC<HealthcareAssistancePageProps> =
               </h2>
               <div className="space-y-3 text-sm sm:text-base text-[#52656b] leading-relaxed">
                 <p>
-                  Remaining at home can significantly improve emotional wellbeing and quality of life.
-                  Our Healthcare Assistance in Leicestershire ensures individuals maintain their
-                  independence while receiving the practical and medical support they need.
+                  Being able to stay in one's own home profoundly enhances emotional wellbeing,
+                  self-esteem, and quality of life. Our Healthcare Assistance provides the discreet,
+                  respectful support required to preserve familiar routines and personal independence.
                 </p>
                 <p>
-                  Whether you require short-term assistance or ongoing domiciliary care in Leicestershire,
-                  our team is here to help every step of the way.
+                  Whether you need brief daily assistance, respite visits, or ongoing domiciliary care,
+                  our team is dedicated to supporting your family with warmth and diligence.
                 </p>
               </div>
             </section>
 
-            {/* 6. Get Started with Healthcare Assistance in Leicestershire */}
+            {/* 6. Get Started with Healthcare Assistance */}
             <section aria-labelledby="get-started-healthcare-heading" className="space-y-3">
               <h2
                 id="get-started-healthcare-heading"
                 className="text-xl sm:text-2xl font-bold tracking-tight text-[#17252B]"
               >
-                Get Started with Healthcare Assistance in Leicestershire
+                Get Started with Healthcare Assistance Today
               </h2>
               <p className="text-sm sm:text-base text-[#52656b] leading-relaxed">
-                If you or your loved one needs professional care at home in Leicestershire, contact Oadby
-                Care today. Our friendly team will discuss your requirements, arrange a consultation,
-                and create a personalized care plan designed around your needs.
+                If you or a loved one would benefit from professional healthcare assistance at home,
+                contact Oadby Care today. Our friendly team is here to listen, answer your questions,
+                and arrange a personalized care consultation.
               </p>
             </section>
           </div>
