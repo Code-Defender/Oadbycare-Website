@@ -87,7 +87,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage = 'home', onNavigate
 
   return (
     <header className="sticky top-3.5 z-50 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto bg-white/95 backdrop-blur-md border border-slate-100/90 rounded-full px-5 sm:px-7 py-3 shadow-[0_20px_40px_-10px_rgba(23,37,43,0.08),0_1px_3px_rgba(0,0,0,0.04)] flex items-center justify-between">
+      <div className="max-w-6xl mx-auto bg-white/95 backdrop-blur-md border border-slate-100/90 rounded-full px-3.5 sm:px-7 py-2.5 sm:py-3 shadow-[0_20px_40px_-10px_rgba(23,37,43,0.08),0_1px_3px_rgba(0,0,0,0.04)] flex items-center justify-between">
         {/* Brand Logo */}
         <a
           aria-label="Oadby Care Home"

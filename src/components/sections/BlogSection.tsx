@@ -29,7 +29,7 @@ export const BlogSection: React.FC = () => {
         {BLOG_ARTICLES.map((article) => (
           <article
             key={article.id}
-            className="bg-white rounded-[2rem] p-7 border border-[#dbeff2] shadow-[0_10px_30px_-5px_rgba(77,174,181,0.08),0_4px_12px_-2px_rgba(0,0,0,0.03)] hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
+            className="bg-white rounded-[2rem] p-5 sm:p-7 border border-[#dbeff2] shadow-[0_10px_30px_-5px_rgba(77,174,181,0.08),0_4px_12px_-2px_rgba(0,0,0,0.03)] hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
           >
             <div className="space-y-3">
               <div className="flex items-center justify-between text-xs text-[#52656b]">

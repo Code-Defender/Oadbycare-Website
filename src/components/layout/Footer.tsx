@@ -29,7 +29,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         {/* =========================================================================
             TOP SECTION: Carer Recruitment Ribbon
             ========================================================================= */}
-        <div className="p-6 sm:p-8 rounded-2xl bg-slate-900/90 border border-slate-800 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+        <div className="p-5 sm:p-8 rounded-2xl bg-slate-900/90 border border-slate-800 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div className="space-y-1">
             <div className="flex items-center gap-2.5">
               <span className="w-2.5 h-2.5 rounded-full bg-[#4DAEB5] animate-pulse" />
@@ -246,16 +246,28 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         {/* =========================================================================
             BOTTOM STRIP: Copyright & Legal
             ========================================================================= */}
-        <div className="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+        <div className="pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4 text-center sm:text-left">
           <div>© {CURRENT_YEAR} Oadby Care Ltd. All rights reserved.</div>
-          <div className="flex items-center space-x-6">
-            <a className="hover:text-white transition-colors" href="#">
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+            <a
+              className="hover:text-white transition-colors cursor-pointer"
+              href="#privacy-policy"
+              onClick={(e) => handleNav(e, 'privacy-policy')}
+            >
               Privacy Policy
             </a>
-            <a className="hover:text-white transition-colors" href="#">
+            <a
+              className="hover:text-white transition-colors cursor-pointer"
+              href="#cookie-policy"
+              onClick={(e) => handleNav(e, 'cookie-policy')}
+            >
               Cookie Policy
             </a>
-            <a className="hover:text-white transition-colors" href="#">
+            <a
+              className="hover:text-white transition-colors cursor-pointer"
+              href="#terms-conditions"
+              onClick={(e) => handleNav(e, 'terms-conditions')}
+            >
               Terms &amp; Conditions
             </a>
           </div>

@@ -50,7 +50,20 @@ export const ContactSection: React.FC = () => {
 
     setIsSubmitting(true)
     try {
-      const result = await submitCareInquiry(formData)
+      const serviceLabels: Record<string, string> = {
+        domiciliary: 'Personal & Domiciliary Care',
+        companionship: 'Companionship & Daily Living',
+        dementia: "Dementia & Alzheimer's Care",
+        respite: 'Respite Care',
+        'live-in': '24/7 Live-in Care',
+        palliative: 'Palliative & End of Life',
+      }
+
+      const result = await submitCareInquiry({
+        ...formData,
+        serviceName: serviceLabels[formData.serviceType] || formData.serviceType,
+        message: formData.message.trim() || 'No additional message provided',
+      })
       setSubmissionResult(result)
       setErrors({})
     } catch (err) {
@@ -67,7 +80,7 @@ export const ContactSection: React.FC = () => {
 
   return (
     <section
-      className="relative rounded-[2rem] bg-gradient-to-br from-[#dcf2f5] via-[#eaf8fa] to-white p-8 sm:p-12 lg:p-16 border border-[#dbeff2] shadow-[0_10px_30px_-5px_rgba(77,174,181,0.08),0_4px_12px_-2px_rgba(0,0,0,0.03)] overflow-hidden"
+      className="relative rounded-[2rem] bg-gradient-to-br from-[#dcf2f5] via-[#eaf8fa] to-white p-5 sm:p-12 lg:p-16 border border-[#dbeff2] shadow-[0_10px_30px_-5px_rgba(77,174,181,0.08),0_4px_12px_-2px_rgba(0,0,0,0.03)] overflow-hidden"
       data-purpose="contact-cta"
       id="contact-section"
     >
@@ -169,7 +182,7 @@ export const ContactSection: React.FC = () => {
           aria-modal="true"
           className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/50 backdrop-blur-sm animate-in fade-in duration-200"
         >
-          <div className="bg-white rounded-[2rem] border border-[#dbeff2] shadow-2xl max-w-lg w-full p-6 sm:p-8 relative max-h-[90vh] overflow-y-auto">
+          <div className="bg-white rounded-[2rem] border border-[#dbeff2] shadow-2xl max-w-lg w-full p-4 sm:p-8 relative max-h-[90vh] overflow-y-auto">
             <button
               type="button"
               onClick={handleCloseModal}

@@ -3,7 +3,7 @@ import React from 'react'
 export const AboutUsSection: React.FC = () => {
   return (
     <section className="py-2" data-purpose="about-us" id="about-section">
-      <div className="bg-gradient-to-br from-[#e8f6f8] via-[#eef9fa] to-white rounded-[2rem] border border-[#dbeff2] p-6 sm:p-10 lg:p-12 shadow-[0_10px_30px_-5px_rgba(77,174,181,0.08),0_4px_12px_-2px_rgba(0,0,0,0.03)] grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <div className="bg-gradient-to-br from-[#e8f6f8] via-[#eef9fa] to-white rounded-[2rem] border border-[#dbeff2] p-5 sm:p-10 lg:p-12 shadow-[0_10px_30px_-5px_rgba(77,174,181,0.08),0_4px_12px_-2px_rgba(0,0,0,0.03)] grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center overflow-hidden">
         {/* Left Image with organic curved container */}
         <div className="lg:col-span-6 relative">
           <div className="relative z-10 rounded-[1.75rem] overflow-hidden border-2 border-white shadow-md bg-white">
@@ -39,7 +39,7 @@ export const AboutUsSection: React.FC = () => {
           </div>
 
           {/* Feature mini-points with concrete metrics */}
-          <div className="grid grid-cols-2 gap-4 py-2">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 py-2">
             <div className="bg-white/90 rounded-2xl p-4 border border-[#dbeff2]/70 shadow-sm">
               <span className="block font-bold text-[#17252B] text-sm">1 Named Care Coordinator</span>
               <span className="text-xs text-[#52656b]">Dedicated direct phone line for your family</span>

@@ -118,7 +118,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate, onSelect
     >
       {/* SECTION 1: Page Title / Breadcrumb Card */}
       <section
-        className="w-full rounded-[2rem] bg-gradient-to-b from-white via-white to-[#f0f9fb]/60 border border-[#dbeff2] p-6 sm:p-10 lg:p-12 shadow-[0_10px_30px_-5px_rgba(77,174,181,0.06),0_4px_12px_-2px_rgba(0,0,0,0.02)] space-y-5"
+        className="w-full rounded-[2rem] bg-gradient-to-b from-white via-white to-[#f0f9fb]/60 border border-[#dbeff2] p-5 sm:p-10 lg:p-12 shadow-[0_10px_30px_-5px_rgba(77,174,181,0.06),0_4px_12px_-2px_rgba(0,0,0,0.02)] space-y-5"
         aria-labelledby="services-page-heading"
       >
         <nav
@@ -250,10 +250,10 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate, onSelect
           </p>
         </div>
 
-        <div className="flex flex-wrap items-center gap-3 shrink-0 w-full md:w-auto">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 shrink-0 w-full md:w-auto">
           <a
             href={SITE_CONFIG.phoneHref}
-            className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-white text-[#17252B] font-bold text-xs sm:text-sm border border-[#dbeff2] hover:bg-slate-50 transition-colors shadow-xs"
+            className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-white text-[#17252B] font-bold text-xs sm:text-sm border border-[#dbeff2] hover:bg-slate-50 transition-colors shadow-xs text-center"
           >
             <Phone className="w-4 h-4 text-[#4DAEB5]" />
             <span>{SITE_CONFIG.phone}</span>
@@ -261,7 +261,7 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate, onSelect
           <button
             type="button"
             onClick={handleContactClick}
-            className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#4DAEB5] hover:bg-[#3d969c] text-white font-bold text-xs sm:text-sm transition-colors shadow-xs cursor-pointer"
+            className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-[#4DAEB5] hover:bg-[#3d969c] text-white font-bold text-xs sm:text-sm transition-colors shadow-xs cursor-pointer text-center"
           >
             <span>Arrange Consultation</span>
             <ArrowRight className="w-4 h-4" />

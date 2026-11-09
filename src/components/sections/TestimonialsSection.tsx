@@ -19,10 +19,10 @@ export const TestimonialsSection: React.FC = () => {
         {STITCH_TESTIMONIALS.map((t) => (
           <div
             key={t.id}
-            className="bg-white rounded-[2rem] p-8 border border-[#dbeff2] shadow-[0_10px_30px_-5px_rgba(77,174,181,0.08),0_4px_12px_-2px_rgba(0,0,0,0.03)] flex flex-col justify-between relative hover:shadow-lg transition-all duration-300"
+            className="bg-white rounded-[2rem] p-5 sm:p-8 border border-[#dbeff2] shadow-[0_10px_30px_-5px_rgba(77,174,181,0.08),0_4px_12px_-2px_rgba(0,0,0,0.03)] flex flex-col justify-between relative hover:shadow-lg transition-all duration-300"
           >
             <div className="space-y-4">
-              <div className="flex items-center justify-between">
+              <div className="flex flex-wrap items-center justify-between gap-2">
                 <div className="flex gap-1 text-amber-400" aria-label="5 out of 5 stars">
                   {[...Array(t.rating || 5)].map((_, i) => (
                     <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />

@@ -43,8 +43,10 @@ export interface ContactFormData {
   fullName: string
   email: string
   phone: string
-  serviceType: CareServiceType | ''
-  urgency: 'immediate' | 'within-week' | 'planning-ahead'
+  serviceType: CareServiceType | string
+  serviceName?: string
+  preferredCallback?: string
+  urgency: 'immediate' | 'within-week' | 'planning-ahead' | string
   message: string
   consent: boolean
 }
@@ -83,5 +85,8 @@ export type AppPage =
   | 'registered-nurses'
   | 'senior-healthcare-assistants'
   | 'healthcare-assistance'
+  | 'privacy-policy'
+  | 'cookie-policy'
+  | 'terms-conditions'
 
 

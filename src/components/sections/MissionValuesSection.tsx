@@ -7,7 +7,7 @@ const stepIcons = [PhoneCall, Home, UserCheck]
 export const MissionValuesSection: React.FC = () => {
   return (
     <section
-      className="bg-gradient-to-br from-[#e1f3f6] to-[#eaf8fa] rounded-[2rem] p-8 md:p-14 border border-[#dbeff2] shadow-[0_10px_30px_-5px_rgba(77,174,181,0.08),0_4px_12px_-2px_rgba(0,0,0,0.03)] space-y-12"
+      className="bg-gradient-to-br from-[#e1f3f6] to-[#eaf8fa] rounded-[2rem] p-5 sm:p-8 md:p-14 border border-[#dbeff2] shadow-[0_10px_30px_-5px_rgba(77,174,181,0.08),0_4px_12px_-2px_rgba(0,0,0,0.03)] space-y-10 sm:space-y-12"
       data-purpose="mission-values"
     >
       <div className="text-center max-w-2xl mx-auto space-y-2">
@@ -21,7 +21,7 @@ export const MissionValuesSection: React.FC = () => {
 
       {/* Mission & Vision 2-Column Focus */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-        <div className="bg-white rounded-[1.75rem] p-8 border border-[#dbeff2] shadow-sm space-y-4">
+        <div className="bg-white rounded-[1.75rem] p-5 sm:p-8 border border-[#dbeff2] shadow-sm space-y-4">
           <div className="w-12 h-12 rounded-xl bg-[#e8f6f8] text-[#4DAEB5] flex items-center justify-center font-bold">
             <Heart className="w-6 h-6" />
           </div>
@@ -31,7 +31,7 @@ export const MissionValuesSection: React.FC = () => {
           </p>
         </div>
 
-        <div className="bg-white rounded-[1.75rem] p-8 border border-[#dbeff2] shadow-sm space-y-4">
+        <div className="bg-white rounded-[1.75rem] p-5 sm:p-8 border border-[#dbeff2] shadow-sm space-y-4">
           <div className="w-12 h-12 rounded-xl bg-[#e8f6f8] text-[#4DAEB5] flex items-center justify-center font-bold">
             <ShieldCheck className="w-6 h-6" />
           </div>

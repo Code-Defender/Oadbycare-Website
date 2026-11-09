@@ -13,6 +13,9 @@ import { SeniorHealthcareAssistantsPage } from '@/pages/SeniorHealthcareAssistan
 import { HealthcareAssistancePage } from '@/pages/HealthcareAssistancePage'
 import { FaqPage } from '@/pages/FaqPage'
 import { ContactPage } from '@/pages/ContactPage'
+import { PrivacyPolicyPage } from '@/pages/PrivacyPolicyPage'
+import { CookiePolicyPage } from '@/pages/CookiePolicyPage'
+import { TermsConditionsPage } from '@/pages/TermsConditionsPage'
 import type { AppPage } from '@/types'
 
 export const App: React.FC = () => {
@@ -80,6 +83,15 @@ export const App: React.FC = () => {
       ) {
         return 'healthcare-assistance'
       }
+      if (hash === '#privacy-policy' || hash === '#/privacy-policy' || path === '/privacy-policy') {
+        return 'privacy-policy'
+      }
+      if (hash === '#cookie-policy' || hash === '#/cookie-policy' || path === '/cookie-policy') {
+        return 'cookie-policy'
+      }
+      if (hash === '#terms-conditions' || hash === '#/terms-conditions' || path === '/terms-conditions') {
+        return 'terms-conditions'
+      }
     }
     return 'home'
   })
@@ -131,6 +143,12 @@ export const App: React.FC = () => {
         hash === '#services/healthcare-assistance'
       ) {
         setCurrentPage('healthcare-assistance')
+      } else if (hash === '#privacy-policy' || hash === '#/privacy-policy') {
+        setCurrentPage('privacy-policy')
+      } else if (hash === '#cookie-policy' || hash === '#/cookie-policy') {
+        setCurrentPage('cookie-policy')
+      } else if (hash === '#terms-conditions' || hash === '#/terms-conditions') {
+        setCurrentPage('terms-conditions')
       } else if (
         hash === '#home' ||
         hash === '#/' ||
@@ -183,6 +201,15 @@ export const App: React.FC = () => {
       window.scrollTo({ top: 0, behavior: 'smooth' })
     } else if (page === 'healthcare-assistance') {
       window.location.hash = 'healthcare-assistance'
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    } else if (page === 'privacy-policy') {
+      window.location.hash = 'privacy-policy'
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    } else if (page === 'cookie-policy') {
+      window.location.hash = 'cookie-policy'
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+    } else if (page === 'terms-conditions') {
+      window.location.hash = 'terms-conditions'
       window.scrollTo({ top: 0, behavior: 'smooth' })
     } else {
       if (targetSectionId) {
@@ -241,6 +268,12 @@ export const App: React.FC = () => {
         return <FaqPage onNavigate={handleNavigate} />
       case 'contact':
         return <ContactPage onNavigate={handleNavigate} />
+      case 'privacy-policy':
+        return <PrivacyPolicyPage onNavigate={handleNavigate} />
+      case 'cookie-policy':
+        return <CookiePolicyPage onNavigate={handleNavigate} />
+      case 'terms-conditions':
+        return <TermsConditionsPage onNavigate={handleNavigate} />
       case 'home':
       default:
         return <HomePage onNavigate={handleNavigate} />
@@ -249,7 +282,7 @@ export const App: React.FC = () => {
 
   return (
     <ErrorBoundary>
-      <div className="min-h-screen flex flex-col bg-[#f0f9fb] text-[#52656b] font-sans antialiased selection:bg-[#4DAEB5] selection:text-white">
+      <div className="min-h-screen flex flex-col w-full overflow-x-clip bg-[#f0f9fb] text-[#52656b] font-sans antialiased selection:bg-[#4DAEB5] selection:text-white">
         <Navbar currentPage={currentPage} onNavigate={handleNavigate} />
         {renderContent()}
         <Footer onNavigate={handleNavigate} />

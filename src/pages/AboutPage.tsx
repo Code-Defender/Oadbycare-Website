@@ -44,7 +44,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           SECTION 1: HERO SECTION (Two-Column Layout)
           ========================================================================= */}
       <section
-        className="relative w-full rounded-[2rem] p-6 sm:p-10 lg:p-14 border border-[#dbeff2] bg-gradient-to-br from-[#e8f6f8] via-[#f0f9fb] to-white shadow-sm overflow-hidden"
+        className="relative w-full rounded-[2rem] p-5 sm:p-10 lg:p-14 border border-[#dbeff2] bg-gradient-to-br from-[#e8f6f8] via-[#f0f9fb] to-white shadow-sm overflow-hidden"
         aria-labelledby="about-hero-heading"
       >
         {/* Ambient Glows */}
@@ -151,12 +151,12 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           SECTION 2: WHO WE ARE (Two-Column Layout)
           ========================================================================= */}
       <section
-        className="w-full rounded-[2rem] bg-white border border-[#dbeff2] p-6 sm:p-10 lg:p-12 shadow-[0_10px_30px_-5px_rgba(77,174,181,0.08),0_4px_12px_-2px_rgba(0,0,0,0.03)]"
+        className="w-full rounded-[2rem] bg-white border border-[#dbeff2] p-5 sm:p-10 lg:p-12 shadow-[0_10px_30px_-5px_rgba(77,174,181,0.08),0_4px_12px_-2px_rgba(0,0,0,0.03)]"
         aria-labelledby="who-we-are-heading"
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left: Photograph of Friendly Conversation */}
-          <div className="lg:col-span-5 relative order-2 lg:order-1">
+          <div className="lg:col-span-5 relative order-2 lg:order-1 pb-6 sm:pb-0">
             <div className="relative rounded-[2rem] overflow-hidden border border-[#dbeff2] shadow-md bg-white">
               <img
                 src="/about-who-we-are.jpg"
@@ -221,7 +221,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           SECTION 3: OUR MISSION & VISION
           ========================================================================= */}
       <section
-        className="w-full rounded-[2rem] bg-[#e8f6f8]/60 border border-[#dbeff2] p-6 sm:p-10 lg:p-12 space-y-8"
+        className="w-full rounded-[2rem] bg-[#e8f6f8]/60 border border-[#dbeff2] p-5 sm:p-10 lg:p-12 space-y-8"
         aria-labelledby="mission-vision-heading"
       >
         <div className="text-center max-w-2xl mx-auto space-y-2">
@@ -239,7 +239,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
         {/* Two balanced cards: Mission & Vision */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
           {/* Card 1: Our Mission */}
-          <div className="p-8 sm:p-10 rounded-2xl bg-white border border-[#dbeff2] shadow-xs hover:shadow-md transition-all flex flex-col justify-between space-y-6">
+          <div className="p-5 sm:p-8 rounded-2xl bg-white border border-[#dbeff2] shadow-xs hover:shadow-md transition-all flex flex-col justify-between space-y-6">
             <div className="space-y-4">
               <div className="w-14 h-14 rounded-2xl bg-[#e8f6f8] text-[#4DAEB5] flex items-center justify-center shadow-xs">
                 <Heart className="w-7 h-7" />
@@ -263,7 +263,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           </div>
 
           {/* Card 2: Our Vision */}
-          <div className="p-8 sm:p-10 rounded-2xl bg-white border border-[#dbeff2] shadow-xs hover:shadow-md transition-all flex flex-col justify-between space-y-6">
+          <div className="p-5 sm:p-8 rounded-2xl bg-white border border-[#dbeff2] shadow-xs hover:shadow-md transition-all flex flex-col justify-between space-y-6">
             <div className="space-y-4">
               <div className="w-14 h-14 rounded-2xl bg-[#e8f6f8] text-[#4DAEB5] flex items-center justify-center shadow-xs">
                 <Target className="w-7 h-7" />
@@ -424,12 +424,12 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           SECTION 5: WHY CHOOSE OADBY CARE? (Two-Column Layout)
           ========================================================================= */}
       <section
-        className="w-full rounded-[2rem] bg-white border border-[#dbeff2] p-6 sm:p-10 lg:p-12 shadow-[0_10px_30px_-5px_rgba(77,174,181,0.08),0_4px_12px_-2px_rgba(0,0,0,0.03)]"
+        className="w-full rounded-[2rem] bg-white border border-[#dbeff2] p-5 sm:p-10 lg:p-12 shadow-[0_10px_30px_-5px_rgba(77,174,181,0.08),0_4px_12px_-2px_rgba(0,0,0,0.03)]"
         aria-labelledby="why-choose-heading"
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left: Home care photograph with floating badge */}
-          <div className="lg:col-span-5 relative">
+          <div className="lg:col-span-5 relative pb-5 sm:pb-0">
             <div className="relative rounded-[2rem] overflow-hidden border border-[#dbeff2] shadow-md bg-white">
               <img
                 src="/about-why-choose.jpg"
@@ -526,7 +526,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
           SECTION 6: FINAL CTA SECTION
           ========================================================================= */}
       <section
-        className="w-full rounded-[2rem] bg-gradient-to-r from-[#dcf2f5] via-[#eaf8fa] to-white p-8 sm:p-12 lg:p-16 border border-[#dbeff2] shadow-sm relative overflow-hidden"
+        className="w-full rounded-[2rem] bg-gradient-to-r from-[#dcf2f5] via-[#eaf8fa] to-white p-5 sm:p-12 lg:p-16 border border-[#dbeff2] shadow-sm relative overflow-hidden"
         aria-labelledby="about-cta-heading"
       >
         <div className="relative z-10 max-w-3xl mx-auto text-center space-y-6">

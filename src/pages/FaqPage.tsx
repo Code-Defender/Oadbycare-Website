@@ -157,7 +157,7 @@ export const FaqPage: React.FC<FaqPageProps> = ({ onNavigate }) => {
     >
       {/* SECTION 1: Page Hero & Breadcrumb */}
       <section
-        className="w-full rounded-[2rem] bg-gradient-to-b from-white to-[#f0f9fb]/60 border border-[#dbeff2] p-8 sm:p-12 lg:p-16 shadow-[0_10px_30px_-5px_rgba(77,174,181,0.06),0_4px_12px_-2px_rgba(0,0,0,0.02)] space-y-6"
+        className="w-full rounded-[2rem] bg-gradient-to-b from-white to-[#f0f9fb]/60 border border-[#dbeff2] p-5 sm:p-10 lg:p-16 shadow-[0_10px_30px_-5px_rgba(77,174,181,0.06),0_4px_12px_-2px_rgba(0,0,0,0.02)] space-y-6"
         aria-labelledby="faq-page-heading"
       >
         {/* Breadcrumb: Home / F.A.Q */}
@@ -293,7 +293,7 @@ export const FaqPage: React.FC<FaqPageProps> = ({ onNavigate }) => {
                       aria-expanded={isOpen}
                       aria-controls={contentId}
                       onClick={() => toggleItem(faq.id)}
-                      className="w-full text-left p-5 sm:p-6 flex items-start sm:items-center justify-between gap-4 font-semibold text-[#17252B] hover:text-[#4DAEB5] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#4DAEB5] rounded-2xl"
+                      className="w-full text-left p-4 sm:p-6 flex items-start sm:items-center justify-between gap-3 sm:gap-4 font-semibold text-[#17252B] hover:text-[#4DAEB5] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#4DAEB5] rounded-2xl"
                     >
                       <div className="space-y-1 pr-2">
                         <span className="inline-block text-[11px] font-bold text-[#4DAEB5] bg-[#f0f9fb] px-2.5 py-0.5 rounded-md tracking-wider uppercase">
@@ -358,7 +358,7 @@ export const FaqPage: React.FC<FaqPageProps> = ({ onNavigate }) => {
 
       {/* SECTION 3: Still Have Questions Reassurance CTA */}
       <section
-        className="rounded-3xl bg-gradient-to-br from-slate-900 to-[#17252B] text-white p-8 sm:p-12 border border-slate-800 shadow-xl flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8"
+        className="rounded-3xl bg-gradient-to-br from-slate-900 to-[#17252B] text-white p-5 sm:p-10 lg:p-12 border border-slate-800 shadow-xl flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 sm:gap-8"
         aria-labelledby="faq-cta-heading"
       >
         <div className="space-y-3 max-w-xl">

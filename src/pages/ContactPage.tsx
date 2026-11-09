@@ -138,13 +138,21 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
 
       const mappedType = serviceTypeMapping[service] || 'domiciliary'
 
+      const callbackLabels: Record<string, string> = {
+        morning: 'Morning (9:00 AM – 12:00 PM)',
+        afternoon: 'Afternoon (12:00 PM – 4:00 PM)',
+        evening: 'Evening (4:00 PM – 7:00 PM)',
+      }
+
       const result = await submitCareInquiry({
         fullName: fullName.trim(),
         email: email.trim(),
         phone: phone.trim(),
         serviceType: mappedType,
-        urgency: 'immediate',
-        message: `[Preferred Callback: ${callbackWindow.toUpperCase()}] [Selected Service: ${service}] ${message.trim()}`,
+        serviceName: service || 'General Consultation',
+        preferredCallback: callbackLabels[callbackWindow] || callbackWindow,
+        urgency: 'Immediate',
+        message: message.trim() || 'No additional notes provided.',
         consent,
       })
 
@@ -200,7 +208,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
           SECTION 1: STREAMLINED COMPACT HEADER & BREADCRUMB
           ========================================================================= */}
       <section
-        className="w-full rounded-[2rem] bg-gradient-to-b from-white via-white to-[#f0f9fb]/60 border border-[#dbeff2] p-6 sm:p-10 lg:p-12 shadow-[0_10px_30px_-5px_rgba(77,174,181,0.06),0_4px_12px_-2px_rgba(0,0,0,0.02)] space-y-6"
+        className="w-full rounded-[2rem] bg-gradient-to-b from-white via-white to-[#f0f9fb]/60 border border-[#dbeff2] p-5 sm:p-10 lg:p-12 shadow-[0_10px_30px_-5px_rgba(77,174,181,0.06),0_4px_12px_-2px_rgba(0,0,0,0.02)] space-y-6"
         aria-labelledby="contact-hero-heading"
       >
         {/* Breadcrumb: Home / Contact */}
@@ -487,7 +495,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
           <div className="lg:col-span-7">
             <div
               id="contact-form"
-              className="p-6 sm:p-10 lg:p-12 rounded-[2rem] bg-white border border-[#dbeff2] shadow-[0_10px_30px_-5px_rgba(77,174,181,0.08),0_4px_12px_-2px_rgba(0,0,0,0.03)] relative"
+              className="p-4 sm:p-8 lg:p-12 rounded-[2rem] bg-white border border-[#dbeff2] shadow-[0_10px_30px_-5px_rgba(77,174,181,0.08),0_4px_12px_-2px_rgba(0,0,0,0.03)] relative"
             >
               {/* Form Heading & Description */}
               <div className="flex items-start justify-between mb-8 pb-4 border-b border-[#dbeff2]">
@@ -844,7 +852,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
           SECTION 3: REASSURANCE & FAQ BRIDGE
           ========================================================================= */}
       <section
-        className="w-full rounded-[2rem] bg-[#e8f6f8]/60 border border-[#dbeff2] p-8 sm:p-12 space-y-8"
+        className="w-full rounded-[2rem] bg-[#e8f6f8]/60 border border-[#dbeff2] p-5 sm:p-8 md:p-12 space-y-8"
         aria-labelledby="reassurance-heading"
       >
         <div className="text-center max-w-2xl mx-auto space-y-2">
@@ -940,7 +948,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onNavigate }) => {
           SECTION 4: FINAL CTA SECTION
           ========================================================================= */}
       <section
-        className="w-full rounded-[2rem] bg-gradient-to-r from-[#dcf2f5] via-[#eaf8fa] to-white p-8 sm:p-12 lg:p-16 border border-[#dbeff2] shadow-sm relative overflow-hidden"
+        className="w-full rounded-[2rem] bg-gradient-to-r from-[#dcf2f5] via-[#eaf8fa] to-white p-5 sm:p-10 lg:p-16 border border-[#dbeff2] shadow-sm relative overflow-hidden"
         aria-labelledby="cta-heading"
       >
         <div className="relative z-10 max-w-3xl mx-auto text-center space-y-6">

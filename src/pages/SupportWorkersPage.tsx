@@ -51,7 +51,7 @@ export const SupportWorkersPage: React.FC<SupportWorkersPageProps> = ({ onNaviga
           ========================================================================= */}
       <section
         aria-label="Support Workers Banner"
-        className="relative w-full h-64 sm:h-72 lg:h-80 bg-slate-900 overflow-hidden"
+        className="relative w-full min-h-[290px] sm:min-h-0 sm:h-72 lg:h-80 bg-slate-900 overflow-hidden"
       >
         <img
           src="/service-banner-hero.jpg"
@@ -63,7 +63,7 @@ export const SupportWorkersPage: React.FC<SupportWorkersPageProps> = ({ onNaviga
 
         <div className="absolute inset-0 flex items-end">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pb-0">
-            <div className="bg-white rounded-t-2xl sm:rounded-t-3xl p-6 sm:p-8 max-w-xl shadow-xl border-t border-x border-[#dbeff2] relative">
+            <div className="bg-white rounded-t-2xl sm:rounded-t-3xl p-4 sm:p-8 max-w-xl shadow-xl border-t border-x border-[#dbeff2] relative">
               <div className="absolute bottom-0 left-0 right-0 h-1.5 bg-[#4DAEB5]" />
 
               <nav

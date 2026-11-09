@@ -50,7 +50,7 @@ export const Hero: React.FC<HeroProps> = ({ onCheckAvailability }) => {
 
   return (
     <section
-      className="relative rounded-[2rem] overflow-hidden shadow-[0_10px_30px_-5px_rgba(77,174,181,0.08),0_4px_12px_-2px_rgba(0,0,0,0.03)] border border-[#dbeff2]/70 min-h-[580px] lg:min-h-[620px] flex flex-col justify-between p-6 sm:p-10 lg:p-12"
+      className="relative rounded-[2rem] overflow-hidden shadow-[0_10px_30px_-5px_rgba(77,174,181,0.08),0_4px_12px_-2px_rgba(0,0,0,0.03)] border border-[#dbeff2]/70 min-h-[580px] lg:min-h-[620px] flex flex-col justify-between p-5 sm:p-10 lg:p-12"
       data-purpose="hero"
     >
       {/* Background Image & Soft Teal Gradients */}
@@ -80,7 +80,7 @@ export const Hero: React.FC<HeroProps> = ({ onCheckAvailability }) => {
         </div>
 
         {/* Main Headline */}
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#17252B] tracking-tight leading-[1.12]">
+        <h1 className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-[#17252B] tracking-tight leading-[1.14] break-words">
           Compassionate Home &amp; Live-In Care{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#17252B] via-[#22676c] to-[#4DAEB5]">
             Across Oadby &amp; Leicestershire
@@ -93,15 +93,15 @@ export const Hero: React.FC<HeroProps> = ({ onCheckAvailability }) => {
         </p>
 
         {/* Call to Actions */}
-        <div className="flex flex-wrap items-center gap-4 pt-1">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-1">
           <a
-            className="px-7 py-3.5 rounded-full text-base font-semibold text-white bg-[#4DAEB5] hover:bg-[#3d969c] shadow-md hover:shadow-lg transition-all focus:ring-2 focus:ring-[#4DAEB5]"
+            className="px-7 py-3.5 rounded-full text-base font-semibold text-white bg-[#4DAEB5] hover:bg-[#3d969c] shadow-md hover:shadow-lg transition-all text-center focus:ring-2 focus:ring-[#4DAEB5]"
             href="#services-section"
           >
             Explore Our Services
           </a>
           <a
-            className="px-7 py-3.5 rounded-full text-base font-semibold text-[#17252B] bg-white/95 hover:bg-white border border-[#dbeff2] shadow-sm hover:shadow transition-all backdrop-blur-sm"
+            className="px-7 py-3.5 rounded-full text-base font-semibold text-[#17252B] bg-white/95 hover:bg-white border border-[#dbeff2] shadow-sm hover:shadow transition-all backdrop-blur-sm text-center"
             href="#contact-section"
           >
             Get in Touch
@@ -133,7 +133,7 @@ export const Hero: React.FC<HeroProps> = ({ onCheckAvailability }) => {
 
       {/* Quick Care Availability Matcher Bar */}
       <div className="relative z-10 mt-10 rounded-2xl p-4 sm:p-5 shadow-[0_12px_36px_0_rgba(77,174,181,0.14)] border border-white/80 bg-white/75 backdrop-blur-md">
-        <form className="grid grid-cols-1 md:grid-cols-4 gap-4 items-end" onSubmit={handleSubmit}>
+        <form className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 items-end" onSubmit={handleSubmit}>
           <div className="space-y-1.5">
             <label className="block text-xs font-semibold text-[#17252B] uppercase tracking-wide" htmlFor="care-type">
               Care Type

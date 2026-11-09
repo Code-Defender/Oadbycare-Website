@@ -93,8 +93,9 @@ export const ServiceAdviceForm: React.FC<ServiceAdviceFormProps> = ({
         email: email.trim(),
         phone: phone.trim(),
         serviceType: 'domiciliary',
-        urgency: 'within-week',
-        message: `[Care Type: ${careType}] ${message.trim() || 'Request a Callback'}`,
+        serviceName: careType,
+        urgency: 'Within this week',
+        message: message.trim() || 'Request a Callback',
         consent: true,
       })
 
